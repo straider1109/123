@@ -1,0 +1,5 @@
+D:\Учёба\Учёба 4 курс\Семместр 2\Курсовая работа\AppTradeService\AppTradeService\bin\AppTradeService.dll
+D:\Учёба\Учёба 4 курс\Семместр 2\Курсовая работа\AppTradeService\AppTradeService\bin\AppTradeService.pdb
+D:\Учёба\Учёба 4 курс\Семместр 2\Курсовая работа\AppTradeService\AppTradeService\obj\Debug\AppTradeService.dll
+D:\Учёба\Учёба 4 курс\Семместр 2\Курсовая работа\AppTradeService\AppTradeService\obj\Debug\AppTradeService.pdb
+D:\Учёба\Учёба 4 курс\Семместр 2\Курсовая работа\AppTradeService\AppTradeService\obj\Debug\AppTradeService.csprojResolveAssemblyReference.cache

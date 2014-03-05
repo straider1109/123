@@ -12,7 +12,7 @@
             margin-top:10%;
             margin-left:20%;
             background-color: #8AC8EE;
-            /*#656565*/
+            /*#656565ыыы*/
         }
         
         

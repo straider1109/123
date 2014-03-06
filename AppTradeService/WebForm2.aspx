@@ -105,11 +105,11 @@
 </head>
 <body style="height: 360px; background-color: #8AC8EE;">
     <form id="form1" runat="server">
-
+    <!--
     <div class="logo">
-        <asp:Image ID="Img1" runat="server" ImageUrl="/Src/Mylogo.jpg" ></asp:Image>
+        <asp:Image ID="Img1" runat="server" ImageUrl="/Src/Mylogo_2.jpg" ></asp:Image>
     </div>
-
+    -->
 
     <div class="mainBorder"
 		style="border: 2px solid #4086FF; width: 65%; height: 400px; "> 
@@ -121,7 +121,6 @@
                 </div>
 
                 <div class="text2_in_block1">
-                     
                      Здесь вы можете разместить свой товар, найти новых клиентов, либо найти нужный вам товар, 
                      найти новых поставщиков. 
                 </div>
@@ -129,13 +128,10 @@
 			</div>
 				
             <div class="block2">
-              
-				
                  <asp:TextBox ID="TextBox1" runat="server" placeholder="  Ваш логин" class="texter1" ></asp:TextBox>
                  <asp:TextBox ID="TextBox2" runat="server" placeholder="  Ваш пароль" class="texter2" ></asp:TextBox>
                  <asp:Button ID="buton1" runat="server" Text="Вход" class="buton1 " />
 			</div>
-
 
 		</div>
  

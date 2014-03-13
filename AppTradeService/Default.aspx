@@ -10,7 +10,6 @@
         .logo
         {
             margin-left:7%;
-            
         }
         /*-----------------------------------Главная таблица---------------------------------*/
         .mainBorder
@@ -18,7 +17,6 @@
             margin-top:3%;
             margin-left:20%;
             background-color: #8AC8EE;
-            /*#656565*/
         }
         
         /*-----------------------------------Блок №1---------------------------------*/
@@ -32,8 +30,6 @@
             height: 380px; 
             background-color: #FFFFFF; 
             float: left;
-           
-
         }
         /*-----------------------------------Блок №2---------------------------------*/
         .block2
@@ -183,7 +179,7 @@
     </div>
     
 
-    <div class="mainBorder" style="border: 2px solid #4086FF; width: 65%; height: 440px; "> 
+    <div class="mainBorder" style="border: 2px solid #8AC8EE; width: 65%; height: 440px; "> 
         
 		<div class="block1">
 		    <div class="text1_in_block1">

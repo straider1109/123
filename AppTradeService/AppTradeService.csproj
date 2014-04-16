@@ -50,6 +50,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Contacts.aspx" />
+    <Content Include="InformationPage.aspx" />
     <Content Include="Main.aspx" />
     <Content Include="Styles\Style.css" />
     <Content Include="Web.config" />
@@ -60,8 +62,24 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Default.aspx" />
+    <Content Include="DealerPage.aspx" />
+    <Content Include="ClientPage.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contacts.aspx.cs">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contacts.aspx.designer.cs">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InformationPage.aspx.cs">
+      <DependentUpon>InformationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InformationPage.aspx.designer.cs">
+      <DependentUpon>InformationPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -83,6 +101,20 @@
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DealerPage.aspx.cs">
+      <DependentUpon>DealerPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DealerPage.aspx.designer.cs">
+      <DependentUpon>DealerPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientPage.aspx.cs">
+      <DependentUpon>ClientPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientPage.aspx.designer.cs">
+      <DependentUpon>ClientPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

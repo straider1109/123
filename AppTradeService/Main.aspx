@@ -4,73 +4,150 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Главная страница Trade Service</title>
+    <title>Trade Service - Главная страница</title>
+
+    <link href="/src/css/bootstrap.css" rel="stylesheet"/>
+
     <style type="text/css">
 
         body
         {
-	        background-color: #8AC8EE;
-	        /*background: url(Src/images/bg.jpg);*/
+	        /*background-color: #8AC8EE;*/
+	        background-image: url('/src/vetton3.jpg');
         }
+        /*-------------------------------------- МЕНЮ ------------------------------------------------ */
+        
+        /*-------------------------------------- Логотип ------------------------------------------------ */
+
 
         .logo
         {
-            padding-left:7%;
-            border:2px solid #000000;
+            padding-left:4%;
         }
 
-        .mainBorder1
-        {
-            
-            width:80%;
-            height:100px;
-            margin-top:1%;
-            margin-left:9%;
-            border:2px solid #000000;
-        }
-        
         .mainBorder2
         {
-            width:80%;
-            height:370px;
-            margin-top:1%;
-            margin-left:9%;
-            border:2px solid #000000;
+            height:720px;
+            margin-top:0%;
+            border:1px solid #4086FF;
+            background-color:#ffffff;
+            border-radius:7px;
         }
-
-
+        
+        .block1
+        {
+            width:69%;
+            height:97%;
+            margin-top:1%;
+            margin-left:1%;
+            border:1px solid #4086FF;
+            border-radius:7px;
+            background-color:#A7BCCF;
+            float:left;
+        }
+        
+        .block2
+        {
+            width:28%;
+            height:97%;
+            margin-top:1%;
+            margin-right:1%;
+            border:1px solid #4086FF;
+            border-radius:7px;
+            background-color:#A7BCCF;
+            float:right;
+        }
+        
+        .form-group
+        {
+            margin-top:3%;
+            margin-left:5%;
+            width:90%;
+            height:5%;   
+        }
+        
+        .first_el
+        {
+            margin-left:1%;
+        }
+        
+        .menushka
+        {
+            height:57px;
+        }
+        
+        .footer
+        {
+            margin-top:10px;
+            height: 60px;
+            text-align:center;
+            font-size: 80%
+            
+        }
+        
+        .form-control
+        {
+            width:100%;
+        }
+        
+        
     </style>
 
 </head>
 
 <body>
+
+    <script src="/src/js/bootstrap.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
     <form id="form1" runat="server">
 
         <div class="logo">
             <asp:Image ID="Image1" runat="server" ImageUrl="/Src/name.png" ></asp:Image>
         </div>
-    
-        <div class="mainBorder1">
-            <asp:Image ID="Image2" runat="server" ImageUrl="/Src/Без-имени-1.png" ></asp:Image>
-        </div>
-    
-        <div class="mainBorder2">
+   
+        <div class="container">
+
+            <div class="menushka">
+                <nav class="navbar navbar-default" role="navigation">
+                    <ul class="nav nav-pills">
+					            <li class="active first_el"><a href="#"> Главная </a></li>
+					            <li><a href="#"> Поставщику </a></li>
+					            <li><a href="#"> Клиенту </a></li>
+					            <li><a href="#"> Информация </a></li>
+		                        <li><a href="#"> Контакты </a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="mainBorder2">
+
+                <div class="block1">
             
+                </div>
+
+                <div class="block2">
+               
+                    <form action="#" class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" placeholder="Что вы хотите найти?"/>
+                            
+                            <button type="submit" class="btn btn-default">Поиск</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div><!-- конец контейнера -->
+    
+        <div class="footer">
+            <p> © 2014 Trade Service. Designed by Free Web Templates, coded by Free CSS Templates <br> Provided by Website Templates  </p>
         </div>
 
-    
-    <!--
-     <div id="menu">
-                <ul>
-			        <li><a href="#" class="first">Главная</a></li>
-			        <li><a href="#" class="first">Поставщику</a></li>
-			        <li><a href="#" class="first">Заказчику</a></li>
-			        <li><a href="#" class="first">Новости</a></li>
-			        <li><a href="#" class="end">Контакты</a></li>
-		        </ul>
-            </div>
-    -->
-    
+        
+
     </form>
 </body>
 </html>

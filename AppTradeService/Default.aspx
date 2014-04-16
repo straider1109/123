@@ -4,19 +4,18 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-    <title></title>
+    <title>Trade Service - Вход</title>
     <style type="text/css">
         /*----------------------------------------Лого--------------------------------------*/
         .logo
         {
-            margin-left:7%;
+            margin-left:4%;
         }
         /*-----------------------------------Главная таблица---------------------------------*/
         .mainBorder
         {
             margin-top:3%;
             margin-left:20%;
-            background-color: #8AC8EE;
         }
         
         /*-----------------------------------Блок №1---------------------------------*/
@@ -35,13 +34,12 @@
         .block2
         {
             margin-top:2%;
-            /*margin-left:6%;*/
             margin-right:3%;
             border-radius:6px;
-            border: 1px solid #4086FF;/*#FFFF00;*/ 
+            border: 1px solid #4086FF;
             width: 36%; 
             height: 140px; 
-            background-color: #FFFFFF; /*#00FFFF*/
+            background-color: #FFFFFF;
             float: right;
         }
         /*-----------------------------------Блок №3---------------------------------*/
@@ -171,7 +169,7 @@
         
     </style>
 </head>
-<body style="height: 360px; background-color: #8AC8EE;">
+<body style="height: 360px; /*background-color: #8AC8EE;*/ background-image: url('/src/vetton3.jpg');">
     <form id="form1" runat="server">
     
     <div class="logo">
@@ -179,7 +177,7 @@
     </div>
     
 
-    <div class="mainBorder" style="border: 2px solid #8AC8EE; width: 65%; height: 440px; "> 
+    <div class="mainBorder" style="/*border: 2px solid #8AC8EE;*/ width: 65%; height: 440px; ">
         
 		<div class="block1">
 		    <div class="text1_in_block1">
@@ -234,10 +232,10 @@
             </div>
 
             <asp:Button ID="Button2" runat="server" Text="Вход" class="buton2" />
-
+            
         </div>
-
-	
+        
+	</div>
 
     </form>
 </body>

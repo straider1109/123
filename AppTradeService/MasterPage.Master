@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="AppTradeService.Main" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="AppTradeService.Site1" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Trade Service - Главная страница</title>
-
+    <title></title>
+    
     <link href="/src/css/bootstrap.css" rel="stylesheet"/>
 
     <style type="text/css">
@@ -88,16 +88,19 @@
         
     </style>
 
-</head>
 
+
+
+</head>
 <body>
 
     <script src="/src/js/bootstrap.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
     <form id="form1" runat="server">
+    
 
-        <div class="logo">
+    <div class="logo">
             <asp:Image ID="Image1" runat="server" ImageUrl="/Src/name.png" ></asp:Image>
         </div>
    
@@ -106,8 +109,8 @@
             <div class="menushka">
                 <nav class="navbar navbar-default" role="navigation">
                     <ul class="nav nav-pills">
-					            <li class="active first_el"><a href="#"> Главная </a></li>
-					            <li><a href="#"> Поставщику </a></li>
+					            <li class="active first_el"><a href="Default.aspx"> Главная </a></li>
+					            <li><a href="DealerPage.aspx"> Поставщику </a></li>
 					            <li><a href="#"> Клиенту </a></li>
 					            <li><a href="#"> Информация </a></li>
 		                        <li><a href="#"> Контакты </a></li>
@@ -118,7 +121,13 @@
             <div class="mainBorder2">
 
                 <div class="block1">
-            
+                
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                        </asp:ContentPlaceHolder>
+                    </div>
+
                 </div>
 
                 <div class="block2">
@@ -141,7 +150,10 @@
             <p> © 2014 Trade Service. Designed by Free Web Templates, coded by Free CSS Templates <br> Provided by Website Templates  </p>
         </div>
 
-        
+
+
+
+
 
     </form>
 </body>

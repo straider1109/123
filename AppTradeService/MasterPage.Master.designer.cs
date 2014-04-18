@@ -10,7 +10,7 @@
 namespace AppTradeService {
     
     
-    public partial class Main {
+    public partial class Site1 {
         
         /// <summary>
         /// form1 элемент управления.
@@ -29,6 +29,15 @@ namespace AppTradeService {
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image Image1;
+        
+        /// <summary>
+        /// ContentPlaceHolder1 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
         
         /// <summary>
         /// searchBox элемент управления.

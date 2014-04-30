@@ -228,7 +228,6 @@
 <body >
     
     <script src="/src/js/bootstrap.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
     <form id="form1" runat="server">
     
@@ -301,7 +300,7 @@
                 <asp:RadioButton ID="RB2" runat="server" Text="Заказчик" />
             </div>
             -->
-            <asp:Button ID="Button2" runat="server" Text="Вход" CssClass="btn-default  btn" />
+            <asp:Button ID="Button2" runat="server" Text="Регистрация" CssClass="btn-default  btn" />
             
         </div>
         

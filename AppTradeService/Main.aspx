@@ -93,7 +93,6 @@
 <body>
 
     <script src="/src/js/bootstrap.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
     <form id="form1" runat="server">
 

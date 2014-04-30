@@ -84,6 +84,82 @@
         {
             width:100%;
         }
+        /* -------------- Приветствие в клиенте ----------*/
+        .clientHeader
+        {
+            height:40px;
+        }
+        /* -------------- Вверх формы клиента ----------*/
+        .helloClient
+        {
+            border:1px #000 solid;
+            margin-top:2%;
+            margin-left:5%;
+            padding-left:1%;
+            text-align:center;
+            float:left;
+        }
+        /* -------------- Форма для поиска в клиенте ----------*/
+        .clientSearchForm
+        {
+            width:90%;
+            height:270px;
+            margin-top:1%;
+            margin-left:5%;
+            border:1px solid #4086FF;
+            border-radius:7px;
+            background-color:#ffffff;
+            padding-top:3%;
+            padding-left:3%;
+        }
+        /* -------------- Рамка в поиске в клиенте ----------*/
+        .borderInClientSearchForm
+        {
+            border:1px solid #4086FF;
+            border-radius:7px;
+
+        }
+        /* -------------- Лэйбл ПОИСК ----------*/ 
+        .clientLabelSearch
+        {
+              
+        }
+        
+        
+        .calendar
+        {
+            width:30%;
+        }
+        /* -------------- Поиск по типу ----------*/
+        .clientLabelType
+        {
+            float:left;
+        }
+        /* -------------- Поиск по названию ----------*/
+        .clientLabelName
+        {
+            float:left;
+        }
+        .clientSearchByName
+        {
+            width:30%;
+        }
+        /* -------------- Поиск по цене ----------*/
+        .clientLabelPrice
+        {
+            float:left;
+        }
+        .clientSearchByPrice
+        {
+            width:30%;
+
+        }
+        /* -------------- Поиск по поставщику ----------*/
+        .clientLabelDealer
+        {
+            float:left;
+        }
+        
         
         
     </style>
@@ -95,11 +171,9 @@
 <body>
 
     <script src="/src/js/bootstrap.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
     <form id="form1" runat="server">
     
-
     <div class="logo">
             <asp:Image ID="Image1" runat="server" ImageUrl="/Src/name.png" ></asp:Image>
         </div>
@@ -111,7 +185,7 @@
                     <ul class="nav nav-pills">
 					            <li class="active first_el"><a href="Default.aspx"> Главная </a></li>
 					            <li><a href="DealerPage.aspx"> Поставщику </a></li>
-					            <li><a href="#"> Клиенту </a></li>
+					            <li><a href="ClientPage.aspx"> Клиенту </a></li>
 					            <li><a href="#"> Информация </a></li>
 		                        <li><a href="#"> Контакты </a></li>
                     </ul>
@@ -139,6 +213,10 @@
                             
                             <asp:Button ID="searchBtn" runat="server" Text="Поиск" CssClass="btn btn-default" />
                             
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        
+                            </asp:ContentPlaceHolder>
+
                         </div>
                     </form>
                 </div>

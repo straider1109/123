@@ -221,6 +221,13 @@
             margin-left:9%;
         }
         
+        .footer
+        {
+            margin-top:10px;
+            height: 60px;
+            text-align:center;
+            font-size: 80%
+        }
         
         
     </style>
@@ -305,6 +312,10 @@
         </div>
         
 	</div>
+
+    <div class="footer">
+        <p> © 2014 Trade Service. Designed by Free Web Templates, coded by Free CSS Templates <br> Provided by Website Templates  </p>
+    </div>
 
     </form>
 </body>

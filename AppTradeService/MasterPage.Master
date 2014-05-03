@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="AppTradeService.Main" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="AppTradeService.Site1" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Trade Service - Главная страница</title>
-
+    <title></title>
+    
     <link href="/src/css/bootstrap.css" rel="stylesheet"/>
 
     <style type="text/css">
@@ -84,19 +84,97 @@
         {
             width:100%;
         }
+        /* -------------- Приветствие в клиенте ----------*/
+        .clientHeader
+        {
+            height:40px;
+        }
+        /* -------------- Вверх формы клиента ----------*/
+        .helloClient
+        {
+            border:1px #000 solid;
+            margin-top:2%;
+            margin-left:5%;
+            padding-left:1%;
+            text-align:center;
+            float:left;
+        }
+        /* -------------- Форма для поиска в клиенте ----------*/
+        .clientSearchForm
+        {
+            width:90%;
+            height:270px;
+            margin-top:1%;
+            margin-left:5%;
+            border:1px solid #4086FF;
+            border-radius:7px;
+            background-color:#ffffff;
+            padding-top:3%;
+            padding-left:3%;
+        }
+        /* -------------- Рамка в поиске в клиенте ----------*/
+        .borderInClientSearchForm
+        {
+            border:1px solid #4086FF;
+            border-radius:7px;
+
+        }
+        /* -------------- Лэйбл ПОИСК ----------*/ 
+        .clientLabelSearch
+        {
+              
+        }
+        
+        
+        .calendar
+        {
+            width:30%;
+        }
+        /* -------------- Поиск по типу ----------*/
+        .clientLabelType
+        {
+            float:left;
+        }
+        /* -------------- Поиск по названию ----------*/
+        .clientLabelName
+        {
+            float:left;
+        }
+        .clientSearchByName
+        {
+            width:30%;
+        }
+        /* -------------- Поиск по цене ----------*/
+        .clientLabelPrice
+        {
+            float:left;
+        }
+        .clientSearchByPrice
+        {
+            width:30%;
+
+        }
+        /* -------------- Поиск по поставщику ----------*/
+        .clientLabelDealer
+        {
+            float:left;
+        }
+        
         
         
     </style>
 
-</head>
 
+
+
+</head>
 <body>
 
     <script src="/src/js/bootstrap.js"></script>
 
     <form id="form1" runat="server">
-
-        <div class="logo">
+    
+    <div class="logo">
             <asp:Image ID="Image1" runat="server" ImageUrl="/Src/name.png" ></asp:Image>
         </div>
    
@@ -105,9 +183,9 @@
             <div class="menushka">
                 <nav class="navbar navbar-default" role="navigation">
                     <ul class="nav nav-pills">
-					            <li class="active first_el"><a href="#"> Главная </a></li>
-					            <li><a href="#"> Поставщику </a></li>
-					            <li><a href="#"> Клиенту </a></li>
+					            <li class="active first_el"><a href="Default.aspx"> Главная </a></li>
+					            <li><a href="DealerPage.aspx"> Поставщику </a></li>
+					            <li><a href="ClientPage.aspx"> Клиенту </a></li>
 					            <li><a href="#"> Информация </a></li>
 		                        <li><a href="#"> Контакты </a></li>
                     </ul>
@@ -117,7 +195,13 @@
             <div class="mainBorder2">
 
                 <div class="block1">
-            
+                
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                        </asp:ContentPlaceHolder>
+                    </div>
+
                 </div>
 
                 <div class="block2">
@@ -129,6 +213,10 @@
                             
                             <asp:Button ID="searchBtn" runat="server" Text="Поиск" CssClass="btn btn-default" />
                             
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        
+                            </asp:ContentPlaceHolder>
+
                         </div>
                     </form>
                 </div>
@@ -140,7 +228,10 @@
             <p> © 2014 Trade Service. Designed by Free Web Templates, coded by Free CSS Templates <br> Provided by Website Templates  </p>
         </div>
 
-        
+
+
+
+
 
     </form>
 </body>

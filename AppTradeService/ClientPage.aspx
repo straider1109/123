@@ -23,6 +23,7 @@
                 <asp:ListItem Value="DarkKhaki"> Dark Khaki </asp:ListItem>
             </asp:DropDownList>
             <br>
+            <br>
             <!-- -------------- Поиск по названию ----------->
             <asp:Label ID="clientLabelName" runat="server" Text="Название товара:" CssClass="clientLabelName"></asp:Label>
             <asp:TextBox ID="clientSearchByName" runat="server" CssClass="form-control clientSearchByName"></asp:TextBox>

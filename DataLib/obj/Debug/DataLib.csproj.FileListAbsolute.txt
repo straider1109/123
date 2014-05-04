@@ -1,0 +1,4 @@
+C:\Users\ярик\Documents\GitHub\123\DataLib\bin\Debug\DataLib.dll
+C:\Users\ярик\Documents\GitHub\123\DataLib\bin\Debug\DataLib.pdb
+C:\Users\ярик\Documents\GitHub\123\DataLib\obj\Debug\DataLib.dll
+C:\Users\ярик\Documents\GitHub\123\DataLib\obj\Debug\DataLib.pdb

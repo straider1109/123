@@ -46,7 +46,7 @@
             border-radius:6px;
             border: 1px solid #4086FF;
             width: 36%; 
-            height: 140px; 
+            height: 160px; 
             background-color: #FFFFFF;
             float: right;
         }
@@ -235,7 +235,7 @@
 <body >
     
     <script src="/src/js/bootstrap.js"></script>
-
+    <script><%=redirectNextPage %></script>
     <form id="form1" runat="server">
     
     <div class="logo">
@@ -267,7 +267,7 @@
 
 		</div>
 				
-        <div class="block2 row-fluid">
+        <div class="block2">
             <div class="text1_in_block2">
 
                 &nbsp &nbsp Вход
@@ -276,10 +276,10 @@
 
             <asp:TextBox ID="loginBox" runat="server" placeholder="Ваш логин" CssClass="form-control loginBoxCSS"></asp:TextBox>
             <asp:TextBox ID="passBox" runat="server" placeholder="Ваш пароль" TextMode="Password" CssClass="form-control passBoxCSS"></asp:TextBox>
-            <asp:Button ID="enterBtn" runat="server" Text="Вход" CssClass="btn-default  btn enterBtnCSS" />
-
+            <asp:Label ID="lblError" runat="server" Text="" style="color:Red;position:absolute;margin-left:41px;margin-top:5px;"></asp:Label>
+            <asp:Button ID="enterBtn" OnClick="LoginBtnClick" runat="server" Text="Вход" CssClass="btn-default  btn enterBtnCSS" />
 		</div>
-
+            
         <div class="block3">
 
             <div class="text1_in_block3">
@@ -318,5 +318,6 @@
     </div>
 
     </form>
+    
 </body>
 </html>

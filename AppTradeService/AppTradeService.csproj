@@ -55,6 +55,8 @@
     <Content Include="Default.aspx" />
     <Content Include="LoginPage.aspx" />
     <Content Include="Main.aspx" />
+    <Content Include="Src\bootstrap.js" />
+    <Content Include="Src\bootstrap.min.js" />
     <Content Include="Styles\Style.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -109,9 +111,7 @@
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Src\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="MasterPage.Master" />
   </ItemGroup>

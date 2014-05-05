@@ -11,6 +11,8 @@ namespace AppTradeService
 {
     public partial class LoginPage : System.Web.UI.Page
     {
+        protected string redirectNextPage = "";
+ 
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -20,6 +22,18 @@ namespace AppTradeService
         {
             string passwordHash = GetHashString(passBoxReg.Text);
             DataLib.Registration.Registrationn(loginBoxReg.Text, passwordHash, companyBoxReg.Text, rbListReg.SelectedValue);
+        }
+
+        protected void LoginBtnClick(object sender, EventArgs e)
+        {
+            string getPasswordHash = GetHashString(passBox.Text);
+            string oldPasswordHash = DataLib.Login.Login.GetHashPasswordByLogin(loginBox.Text);
+            if (getPasswordHash != oldPasswordHash)
+            {
+                //scriptError = "alert('Username or Password incorrect');";
+                lblError.Text = "Username or Password incorrect";
+            }
+            else { }
         }
 
         public static byte[] GetHash(string inputString)

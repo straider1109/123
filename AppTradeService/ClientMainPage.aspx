@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="ClientPage.aspx.cs" Inherits="AppTradeService.ClientPage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="ClientMainPage.aspx.cs" Inherits="AppTradeService.ClientMainPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="clientHeader">
         <div class="helloClient">
-            Приветствуем в вашем личном кабинете!
+            Главная страница клиента
         </div>
     </div>
 
@@ -49,7 +49,7 @@
 
 </asp:Content>
 
-<asp:Content ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
         <div class="calendar">
             <asp:Calendar id="calendar" ShowGridLines="True" ShowTitle="True" runat="server"/>
         </div>

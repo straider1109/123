@@ -10,3 +10,5 @@ C:\Users\ярик\Documents\GitHub\123\AppTradeService\obj\Debug\AppTradeService
 C:\Users\ярик\Documents\GitHub\123\AppTradeService\obj\Debug\AppTradeService.pdb
 C:\Users\ярик\Documents\GitHub\123\AppTradeService\bin\DataLib.dll
 C:\Users\ярик\Documents\GitHub\123\AppTradeService\bin\DataLib.pdb
+D:\Учёба\Учёба 4 курс\Семместр 2\Курсовая работа\AppTradeService\AppTradeService\bin\DataLib.dll
+D:\Учёба\Учёба 4 курс\Семместр 2\Курсовая работа\AppTradeService\AppTradeService\bin\DataLib.pdb

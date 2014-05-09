@@ -10,6 +10,6 @@
 namespace AppTradeService {
     
     
-    public partial class DealerPage {
+    public partial class DealerMainPage {
     }
 }

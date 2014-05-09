@@ -50,11 +50,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ClientPage.aspx" />
-    <Content Include="DealerPage.aspx" />
+    <Content Include="ClientMainPage.aspx" />
+    <Content Include="ContactsInfo.aspx" />
+    <Content Include="DealerMainPage.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="InfoPage.aspx" />
     <Content Include="LoginPage.aspx" />
     <Content Include="Main.aspx" />
+    <Content Include="PrivatePage.aspx" />
     <Content Include="Src\bootstrap.js" />
     <Content Include="Src\bootstrap.min.js" />
     <Content Include="Styles\Style.css" />
@@ -67,19 +70,26 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClientPage.aspx.cs">
-      <DependentUpon>ClientPage.aspx</DependentUpon>
+    <Compile Include="ClientMainPage.aspx.cs">
+      <DependentUpon>ClientMainPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ClientPage.aspx.designer.cs">
-      <DependentUpon>ClientPage.aspx</DependentUpon>
+    <Compile Include="ClientMainPage.aspx.designer.cs">
+      <DependentUpon>ClientMainPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DealerPage.aspx.cs">
-      <DependentUpon>DealerPage.aspx</DependentUpon>
+    <Compile Include="ContactsInfo.aspx.cs">
+      <DependentUpon>ContactsInfo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DealerPage.aspx.designer.cs">
-      <DependentUpon>DealerPage.aspx</DependentUpon>
+    <Compile Include="ContactsInfo.aspx.designer.cs">
+      <DependentUpon>ContactsInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DealerMainPage.aspx.cs">
+      <DependentUpon>DealerMainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DealerMainPage.aspx.designer.cs">
+      <DependentUpon>DealerMainPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -87,6 +97,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InfoPage.aspx.cs">
+      <DependentUpon>InfoPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InfoPage.aspx.designer.cs">
+      <DependentUpon>InfoPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.aspx.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
@@ -102,6 +119,13 @@
     </Compile>
     <Compile Include="Main.aspx.designer.cs">
       <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrivatePage.aspx.cs">
+      <DependentUpon>PrivatePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrivatePage.aspx.designer.cs">
+      <DependentUpon>PrivatePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MasterPage.Master.cs">

@@ -10,7 +10,7 @@
 namespace AppTradeService {
     
     
-    public partial class ClientPage {
+    public partial class ClientMainPage {
         
         /// <summary>
         /// clientLabelSearch элемент управления.

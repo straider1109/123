@@ -183,11 +183,10 @@
             <div class="menushka">
                 <nav class="navbar navbar-default" role="navigation">
                     <ul class="nav nav-pills">
-					            <li class="active first_el"><a href="Default.aspx"> Главная </a></li>
-					            <li><a href="DealerPage.aspx"> Поставщику </a></li>
-					            <li><a href="ClientPage.aspx"> Клиенту </a></li>
-					            <li><a href="#"> Информация </a></li>
-		                        <li><a href="#"> Контакты </a></li>
+					            <li class="active first_el"><a href="DealerMainPage.aspx"> Главная </a></li>
+					            <li><a href="PrivatePage.aspx">Мой кабинет</a></li>
+                                <li><a href="InfoPage.aspx">Информация</a></li>
+                                <li><a href="ContactsInfo.aspx">Контакты</a></li>
                     </ul>
                 </nav>
             </div>

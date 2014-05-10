@@ -92,11 +92,11 @@
             padding-bottom:3%;
         }
         
-         /* -------------- Форма для поиска в дилере ----------*/
+        /* -------------- Форма для добавления в дилере ----------*/
         .dealerAddForm
         {
             width:94%;
-            height:370px;
+            height:570px;
             margin-top:2%;
             margin-left:3%;
             border:1px solid #4086FF;
@@ -106,10 +106,38 @@
             padding-left:3%;
         }
         
+        /* -------------- Лэйбл "Добавить товар" ----------*/
         .dealerLabelAdd
         {
             font-weight:bold;
         }
+        
+        .dealerAddNameText
+        {
+            width:90%;
+        }
+       
+        .dealerPriceText
+        {
+            width:90%;
+        }
+        
+        .dealerAmountText
+        {
+            width:90%;
+        }
+        
+        .dealerDescriptionText
+        {
+            width:90%;
+        }
+        
+        .dealerAddPhotoText
+        {
+            width:60%;
+            float:left;
+        }
+        
         
         
         
@@ -173,19 +201,38 @@
                         <br>
 
                         <!-- -------------- Название ----------->
-                        <asp:Label ID="dealerNameLebel" runat="server" Text="Название товара:" CssClass="dealerNameLebel"></asp:Label>
-                        <asp:TextBox ID="dealerAddName" runat="server" CssClass="form-control dealerAddName"></asp:TextBox>
+                        <asp:Label ID="dealerNameLabel" runat="server" Text="Название товара:" CssClass="dealerNameLabel"></asp:Label>
+                        <asp:TextBox ID="dealerAddNameText" runat="server" CssClass="form-control dealerAddNameText"></asp:TextBox>
                         <br>
 
                         <!-- -------------- Цена ----------->
-                        <asp:Label ID="dealerPriceLebel" runat="server" Text="Стоимость товара:" CssClass="dealerPriceLebel"></asp:Label>
-                        <asp:TextBox ID="clientSearchByPriceLow" runat="server" placeholder="$" CssClass="form-control clientSearchByPriceLow"></asp:TextBox>
+                        <asp:Label ID="dealerPriceLabel" runat="server" Text="Стоимость товара:" CssClass="dealerPriceLabel"></asp:Label>
+                        <asp:TextBox ID="dealerPriceText" runat="server" placeholder="$" CssClass="form-control dealerPriceText"></asp:TextBox>
                         <br>
 
                         <!-- -------------- Колличество ----------->
-                        <asp:Label ID="dealerAmountLabel" runat="server" Text="Коли́чество:" CssClass="dealerAmountLabel"></asp:Label>
-                        <asp:TextBox ID="TextBox1" runat="server" placeholder="$" CssClass="form-control clientSearchByPriceLow"></asp:TextBox>
+                        <asp:Label ID="dealerAmountLabel" runat="server" Text="Количество:" CssClass="dealerAmountLabel"></asp:Label>
+                        <asp:TextBox ID="dealerAmountText" runat="server" CssClass="form-control dealerAmountText"></asp:TextBox>
                         <br>
+
+                        <!-- -------------- Описание ----------->
+                        <asp:Label ID="dealerDescriptionLabel" runat="server" Text="Описание:" CssClass="dealerDescriptionLabel"></asp:Label>
+                        <asp:TextBox ID="dealerDescriptionText" TextMode="MultiLine" runat="server" CssClass="form-control dealerAmountText"></asp:TextBox>
+                        <br>
+
+                        <!-- -------------- Фото ----------->
+                        <asp:Label ID="dealerAddPhotoLabel" runat="server" Text="Фотография:" CssClass="dealerAddPhotoLabel"></asp:Label>
+                        <div class="addPhoto">
+                            <asp:TextBox ID="dealerAddPhotoText" runat="server" CssClass="form-control dealerAddPhotoText"></asp:TextBox>
+                            <asp:Button ID="dealerAddPhotoBtn" runat="server" Text="Обзор" CssClass="btn btn-default dealerAddPhotoBtn" />
+                        </div>
+                        <br>
+
+
+                        <!-- -------------- Кнопка сохранить ----------->
+                        <asp:Button ID="dealerSaveBtn" runat="server" Text="Сохранить" CssClass="btn btn-default dealerSaveBtn" />
+
+
 
                     </div>
                     

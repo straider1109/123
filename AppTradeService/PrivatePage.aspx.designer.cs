@@ -10,7 +10,7 @@
 namespace AppTradeService {
     
     
-    public partial class Main {
+    public partial class PrivatePage {
         
         /// <summary>
         /// Head1 control.

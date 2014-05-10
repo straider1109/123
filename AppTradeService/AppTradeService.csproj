@@ -54,6 +54,7 @@
     <Content Include="ContactsInfo.aspx" />
     <Content Include="DealerMainPage.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="EditPage.aspx" />
     <Content Include="InfoPage.aspx" />
     <Content Include="LoginPage.aspx" />
     <Content Include="PrivatePage.aspx" />
@@ -96,6 +97,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditPage.aspx.cs">
+      <DependentUpon>EditPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditPage.aspx.designer.cs">
+      <DependentUpon>EditPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="InfoPage.aspx.cs">
       <DependentUpon>InfoPage.aspx</DependentUpon>

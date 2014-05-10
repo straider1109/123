@@ -10,7 +10,7 @@
 namespace AppTradeService {
     
     
-    public partial class DealerMainPage {
+    public partial class EditPage {
         
         /// <summary>
         /// Head1 элемент управления.
@@ -31,147 +31,138 @@ namespace AppTradeService {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Image1 элемент управления.
+        /// dealerLabelEdit элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.Label dealerLabelEdit;
         
         /// <summary>
-        /// dealerLabelAdd элемент управления.
+        /// dealerLabelTypeEdit элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label dealerLabelAdd;
+        protected global::System.Web.UI.WebControls.Label dealerLabelTypeEdit;
         
         /// <summary>
-        /// dealerLabelType элемент управления.
+        /// dealerDropDownTypeEdit элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label dealerLabelType;
+        protected global::System.Web.UI.WebControls.DropDownList dealerDropDownTypeEdit;
         
         /// <summary>
-        /// dealerDropDownType элемент управления.
+        /// dealerNameLabelEdit элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dealerDropDownType;
+        protected global::System.Web.UI.WebControls.Label dealerNameLabelEdit;
         
         /// <summary>
-        /// dealerNameLabel элемент управления.
+        /// dealerEditNameText элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label dealerNameLabel;
+        protected global::System.Web.UI.WebControls.TextBox dealerEditNameText;
         
         /// <summary>
-        /// dealerAddNameText элемент управления.
+        /// dealerEditPriceLabel элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox dealerAddNameText;
+        protected global::System.Web.UI.WebControls.Label dealerEditPriceLabel;
         
         /// <summary>
-        /// dealerPriceLabel элемент управления.
+        /// dealerEditPriceText элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label dealerPriceLabel;
+        protected global::System.Web.UI.WebControls.TextBox dealerEditPriceText;
         
         /// <summary>
-        /// dealerPriceText элемент управления.
+        /// dealerEditAmountLabel элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox dealerPriceText;
+        protected global::System.Web.UI.WebControls.Label dealerEditAmountLabel;
         
         /// <summary>
-        /// dealerAmountLabel элемент управления.
+        /// dealerEditAmountText элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label dealerAmountLabel;
+        protected global::System.Web.UI.WebControls.TextBox dealerEditAmountText;
         
         /// <summary>
-        /// dealerAmountText элемент управления.
+        /// dealerEditDescriptionLabel элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox dealerAmountText;
+        protected global::System.Web.UI.WebControls.Label dealerEditDescriptionLabel;
         
         /// <summary>
-        /// dealerDescriptionLabel элемент управления.
+        /// dealerEditDescriptionText элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label dealerDescriptionLabel;
+        protected global::System.Web.UI.WebControls.TextBox dealerEditDescriptionText;
         
         /// <summary>
-        /// dealerDescriptionText элемент управления.
+        /// dealerEditPhotoLabel элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox dealerDescriptionText;
+        protected global::System.Web.UI.WebControls.Label dealerEditPhotoLabel;
         
         /// <summary>
-        /// dealerAddPhotoLabel элемент управления.
+        /// dealerEditPhotoText элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label dealerAddPhotoLabel;
+        protected global::System.Web.UI.WebControls.TextBox dealerEditPhotoText;
         
         /// <summary>
-        /// dealerAddPhotoText элемент управления.
+        /// dealerEditPhotoBtn элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox dealerAddPhotoText;
+        protected global::System.Web.UI.WebControls.Button dealerEditPhotoBtn;
         
         /// <summary>
-        /// dealerAddPhotoBtn элемент управления.
+        /// dealerEditSaveBtn элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button dealerAddPhotoBtn;
-        
-        /// <summary>
-        /// dealerSaveBtn элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button dealerSaveBtn;
+        protected global::System.Web.UI.WebControls.Button dealerEditSaveBtn;
     }
 }

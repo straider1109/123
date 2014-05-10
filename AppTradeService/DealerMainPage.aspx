@@ -84,13 +84,7 @@
         {
             width:100%;
         }
-        .borderSearch
-        {
-            border:1px solid #FFF;
-            margin-top:5%;
-            mardin-left:5%;
-            padding-bottom:3%;
-        }
+        
         
         /* -------------- Форма для добавления в дилере ----------*/
         .dealerAddForm
@@ -177,12 +171,6 @@
 
                 <div class="block1">
                 
-                    <div class="borderSearch">
-                    
-                    <asp:Button ID="dealerAddBtn" runat="server" Text="Добавить товар" CssClass="btn btn-default" />
-
-
-                    </div>
 
                 </div>
 
@@ -248,15 +236,6 @@
             <p> © 2014 Trade Service. Designed by Free Web Templates, coded by Free CSS Templates <br> Provided by Website Templates  </p>
         </div>
 
-        <!--
-        type  drop
-        name 
-        descr
-        price
-        amount
-
-        save
-        -->
     </form>
 </body>
 </html>

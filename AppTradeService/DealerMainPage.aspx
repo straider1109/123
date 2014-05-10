@@ -92,6 +92,29 @@
             padding-bottom:3%;
         }
         
+         /* -------------- Форма для поиска в дилере ----------*/
+        .dealerAddForm
+        {
+            width:94%;
+            height:370px;
+            margin-top:2%;
+            margin-left:3%;
+            border:1px solid #4086FF;
+            border-radius:7px;
+            background-color:#A7BCCF;
+            padding-top:3%;
+            padding-left:3%;
+        }
+        
+        .dealerLabelAdd
+        {
+            font-weight:bold;
+        }
+        
+        
+        
+        
+        
         
     </style>
 
@@ -136,17 +159,40 @@
                 </div>
 
                 <div class="block2">
-               
-                    <form action="#" class="navbar-form navbar-left" role="search">
-                        <div class="form-group">
+                    <div class="dealerAddForm">
+                        
+                        <asp:Label ID="dealerLabelAdd" runat="server" Text="Добавьте ваш товар" CssClass="dealerLabelAdd"></asp:Label>
+                        <br>
+                        <br>
 
-                            <asp:TextBox ID="searchBox" runat="server" placeholder="Что вы хотите найти?" CssClass="form-control" ></asp:TextBox>
-                            
-                            <asp:Button ID="searchBtn" runat="server" Text="Поиск" CssClass="btn btn-default" />
+                        <!-- -------------- Добавление типа ----------->
+                        <asp:Label ID="dealerLabelType" runat="server" Text="Тип товара:" CssClass="dealerLabelType"></asp:Label>
+                        <asp:DropDownList ID="dealerDropDownType" AutoPostBack="True" runat="server">
+                        </asp:DropDownList>
+                        <br>
+                        <br>
 
-                        </div>
-                    </form>
+                        <!-- -------------- Название ----------->
+                        <asp:Label ID="dealerNameLebel" runat="server" Text="Название товара:" CssClass="dealerNameLebel"></asp:Label>
+                        <asp:TextBox ID="dealerAddName" runat="server" CssClass="form-control dealerAddName"></asp:TextBox>
+                        <br>
+
+                        <!-- -------------- Цена ----------->
+                        <asp:Label ID="dealerPriceLebel" runat="server" Text="Стоимость товара:" CssClass="dealerPriceLebel"></asp:Label>
+                        <asp:TextBox ID="clientSearchByPriceLow" runat="server" placeholder="$" CssClass="form-control clientSearchByPriceLow"></asp:TextBox>
+                        <br>
+
+                        <!-- -------------- Колличество ----------->
+                        <asp:Label ID="dealerAmountLabel" runat="server" Text="Коли́чество:" CssClass="dealerAmountLabel"></asp:Label>
+                        <asp:TextBox ID="TextBox1" runat="server" placeholder="$" CssClass="form-control clientSearchByPriceLow"></asp:TextBox>
+                        <br>
+
+                    </div>
+                    
+
+
                 </div>
+
             </div>
 
         </div><!-- конец контейнера -->
@@ -155,11 +201,15 @@
             <p> © 2014 Trade Service. Designed by Free Web Templates, coded by Free CSS Templates <br> Provided by Website Templates  </p>
         </div>
 
+        <!--
+        type  drop
+        name 
+        descr
+        price
+        amount
 
-
-
-
-
+        save
+        -->
     </form>
 </body>
 </html>

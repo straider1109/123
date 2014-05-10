@@ -230,15 +230,18 @@
                         </asp:DropDownList>
                         <br>
                         <br>
+
                         <!-- -------------- Поиск по названию ----------->
                         <asp:TextBox ID="clientSearchByName" runat="server" placeholder="Название товара" CssClass="form-control clientSearchByName"></asp:TextBox>
                         <br>
+
                         <!-- -------------- Поиск по цене ----------->
                         <asp:Label ID="clientLabelPriceLow" runat="server" Text="Цена от:" CssClass="clientLabelPriceLow"></asp:Label>
-                        <asp:TextBox ID="clientSearchByPriceLow" runat="server" CssClass="form-control clientSearchByPriceLow"></asp:TextBox>
+                        <asp:TextBox ID="clientSearchByPriceLow" runat="server" placeholder="$" CssClass="form-control clientSearchByPriceLow"></asp:TextBox>
                         <br>
                         <asp:Label ID="clientLabelPriceHigh" runat="server" Text="до:" CssClass="clientLabelPriceHigh"></asp:Label>
-                        <asp:TextBox ID="clientSearchByPriceHigh" runat="server" CssClass="form-control clientSearchByPriceHigh"></asp:TextBox>
+                        <asp:TextBox ID="clientSearchByPriceHigh" runat="server" placeholder="$" CssClass="form-control clientSearchByPriceHigh"></asp:TextBox>
+                        
                         <!-- -------------- Поиск по поставщику ----------->
                         <asp:Label ID="clientLabelDealer" runat="server" Text="Искать в товарах поставщика:"
                             CssClass="clientLabelDealer"></asp:Label>

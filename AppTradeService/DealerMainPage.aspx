@@ -84,82 +84,13 @@
         {
             width:100%;
         }
-        /* -------------- Приветствие в клиенте ----------*/
-        .clientHeader
+        .borderSearch
         {
-            height:40px;
+            border:1px solid #FFF;
+            margin-top:5%;
+            mardin-left:5%;
+            padding-bottom:3%;
         }
-        /* -------------- Вверх формы клиента ----------*/
-        .helloClient
-        {
-            border:1px #000 solid;
-            margin-top:2%;
-            margin-left:5%;
-            padding-left:1%;
-            text-align:center;
-            float:left;
-        }
-        /* -------------- Форма для поиска в клиенте ----------*/
-        .clientSearchForm
-        {
-            width:90%;
-            height:270px;
-            margin-top:1%;
-            margin-left:5%;
-            border:1px solid #4086FF;
-            border-radius:7px;
-            background-color:#ffffff;
-            padding-top:3%;
-            padding-left:3%;
-        }
-        /* -------------- Рамка в поиске в клиенте ----------*/
-        .borderInClientSearchForm
-        {
-            border:1px solid #4086FF;
-            border-radius:7px;
-
-        }
-        /* -------------- Лэйбл ПОИСК ----------*/ 
-        .clientLabelSearch
-        {
-              
-        }
-        
-        
-        .calendar
-        {
-            width:30%;
-        }
-        /* -------------- Поиск по типу ----------*/
-        .clientLabelType
-        {
-            float:left;
-        }
-        /* -------------- Поиск по названию ----------*/
-        .clientLabelName
-        {
-            float:left;
-        }
-        .clientSearchByName
-        {
-            width:30%;
-        }
-        /* -------------- Поиск по цене ----------*/
-        .clientLabelPrice
-        {
-            float:left;
-        }
-        .clientSearchByPrice
-        {
-            width:30%;
-
-        }
-        /* -------------- Поиск по поставщику ----------*/
-        .clientLabelDealer
-        {
-            float:left;
-        }
-        
         
         
     </style>
@@ -195,7 +126,10 @@
 
                 <div class="block1">
                 
-                    <div>
+                    <div class="borderSearch">
+                    
+                    <asp:Button ID="dealerAddBtn" runat="server" Text="Добавить товар" CssClass="btn btn-default" />
+
 
                     </div>
 

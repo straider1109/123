@@ -83,81 +83,7 @@
         {
             width:100%;
         }
-        /* -------------- Приветствие в клиенте ----------*/
-        .clientHeader
-        {
-            height:40px;
-        }
-        /* -------------- Вверх формы клиента ----------*/
-        .helloClient
-        {
-            border:1px #000 solid;
-            margin-top:2%;
-            margin-left:5%;
-            padding-left:1%;
-            text-align:center;
-            float:left;
-        }
-        /* -------------- Форма для поиска в клиенте ----------*/
-        .clientSearchForm
-        {
-            width:90%;
-            height:270px;
-            margin-top:1%;
-            margin-left:5%;
-            border:1px solid #4086FF;
-            border-radius:7px;
-            background-color:#ffffff;
-            padding-top:3%;
-            padding-left:3%;
-        }
-        /* -------------- Рамка в поиске в клиенте ----------*/
-        .borderInClientSearchForm
-        {
-            border:1px solid #4086FF;
-            border-radius:7px;
-
-        }
-        /* -------------- Лэйбл ПОИСК ----------*/ 
-        .clientLabelSearch
-        {
-              
-        }
         
-        
-        .calendar
-        {
-            width:30%;
-        }
-        /* -------------- Поиск по типу ----------*/
-        .clientLabelType
-        {
-            float:left;
-        }
-        /* -------------- Поиск по названию ----------*/
-        .clientLabelName
-        {
-            float:left;
-        }
-        .clientSearchByName
-        {
-            width:30%;
-        }
-        /* -------------- Поиск по цене ----------*/
-        .clientLabelPrice
-        {
-            float:left;
-        }
-        .clientSearchByPrice
-        {
-            width:30%;
-
-        }
-        /* -------------- Поиск по поставщику ----------*/
-        .clientLabelDealer
-        {
-            float:left;
-        }
         
         
         
@@ -182,7 +108,7 @@
             <div class="menushka">
                 <nav class="navbar navbar-default" role="navigation">
                     <ul class="nav nav-pills">
-					            <li><a href="DealerMainPage.aspx"> Главная </a></li>
+					            <li class="first_el"><a href="DealerMainPage.aspx"> Главная </a></li>
 					            <li><a href="PrivatePage.aspx">Мой кабинет</a></li>
                                 <li class="active first_el"><a href="InfoPage.aspx">Информация</a></li>
                                 <li><a href="ContactsInfo.aspx">Контакты</a></li>

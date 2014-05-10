@@ -196,9 +196,7 @@
                 <div class="block1">
                 
                     <div>
-                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-                        </asp:ContentPlaceHolder>
+
                     </div>
 
                 </div>
@@ -211,10 +209,6 @@
                             <asp:TextBox ID="searchBox" runat="server" placeholder="Что вы хотите найти?" CssClass="form-control" ></asp:TextBox>
                             
                             <asp:Button ID="searchBtn" runat="server" Text="Поиск" CssClass="btn btn-default" />
-                            
-                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-        
-                            </asp:ContentPlaceHolder>
 
                         </div>
                     </form>

@@ -43,7 +43,7 @@ namespace AppTradeService
                 }
                 else if (newRole == 1)
                 {
-                    Response.Redirect("~/DealerPage.aspx");
+                    Response.Redirect("~/DealerMainPage.aspx");
                 }
             }
         }

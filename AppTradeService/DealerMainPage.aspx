@@ -171,7 +171,7 @@
 
                 <div class="block1">
                 
-
+                <asp:Panel ID="GoodsPanel" runat="server"></asp:Panel>
                 </div>
 
                 <div class="block2">
@@ -191,34 +191,33 @@
                         <!-- -------------- Название ----------->
                         <asp:Label ID="dealerNameLabel" runat="server" Text="Название товара:" CssClass="dealerNameLabel"></asp:Label>
                         <asp:TextBox ID="dealerAddNameText" runat="server" CssClass="form-control dealerAddNameText"></asp:TextBox>
-                        <br>
+                        
 
                         <!-- -------------- Цена ----------->
                         <asp:Label ID="dealerPriceLabel" runat="server" Text="Стоимость товара:" CssClass="dealerPriceLabel"></asp:Label>
                         <asp:TextBox ID="dealerPriceText" runat="server" placeholder="$" CssClass="form-control dealerPriceText"></asp:TextBox>
-                        <br>
+                        
 
                         <!-- -------------- Колличество ----------->
                         <asp:Label ID="dealerAmountLabel" runat="server" Text="Количество:" CssClass="dealerAmountLabel"></asp:Label>
                         <asp:TextBox ID="dealerAmountText" runat="server" CssClass="form-control dealerAmountText"></asp:TextBox>
-                        <br>
+                        
 
                         <!-- -------------- Описание ----------->
                         <asp:Label ID="dealerDescriptionLabel" runat="server" Text="Описание:" CssClass="dealerDescriptionLabel"></asp:Label>
                         <asp:TextBox ID="dealerDescriptionText" TextMode="MultiLine" runat="server" CssClass="form-control dealerAmountText"></asp:TextBox>
-                        <br>
+                        
 
                         <!-- -------------- Фото ----------->
                         <asp:Label ID="dealerAddPhotoLabel" runat="server" Text="Фотография:" CssClass="dealerAddPhotoLabel"></asp:Label>
                         <div class="addPhoto">
-                            <asp:TextBox ID="dealerAddPhotoText" runat="server" CssClass="form-control dealerAddPhotoText"></asp:TextBox>
-                            <asp:Button ID="dealerAddPhotoBtn" runat="server" Text="Обзор" CssClass="btn btn-default dealerAddPhotoBtn" />
+                            <asp:FileUpload ID="FileUpload1" runat="server" />
                         </div>
-                        <br>
+                        
 
 
                         <!-- -------------- Кнопка сохранить ----------->
-                        <asp:Button ID="dealerSaveBtn" runat="server" Text="Сохранить" CssClass="btn btn-default dealerSaveBtn" />
+                        <asp:Button ID="goodsSaveBtn" runat="server" AutoPostBack="True" Text="Сохранить" CssClass="btn btn-default dealerSaveBtn" OnClick="SaveGoods"/>
 
 
 

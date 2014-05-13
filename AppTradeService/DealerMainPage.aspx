@@ -27,7 +27,7 @@
         /*-------------------------------------- Блоки ------------------------------------------------ */
         .mainBorder2
         {
-            height:720px;
+            height:1220px;
             margin-top:0%;
             border:1px solid #4086FF;
             background-color:#ffffff;
@@ -132,7 +132,46 @@
             float:left;
         }
         
+        /*--------таблицы с товарами---------*/
+        .outMain
+        {
+            width:90%;
+            height:250px;
+            margin-top:3%;
+            margin-left:5%;
+            border:1px solid #000;
+            border-radius:7px;
+        }
         
+        .outName
+        {
+            height:10%;
+            border:1px solid #000;
+            border-radius:7px 7px 0 0;
+            background-color:#76A9DD;
+        }
+        
+        .outText
+        {
+            width:60%;
+            height:90%;
+            border:1px solid #000;
+            float:right;
+        }
+        
+        .outPhoto
+        {
+            width:40%;
+            height:90%;
+            border:1px solid #000;
+            float:left;
+        }
+        
+        .outBtn
+        {
+            margin-left: 76%;
+            margin-top: 39%;
+        }
         
         
         

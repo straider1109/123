@@ -3,7 +3,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-    <title></title>
+    <title> Trade Service - Страница клиента</title>
     
     <link href="/src/css/bootstrap.css" rel="stylesheet"/>
 
@@ -166,6 +166,9 @@
         
         
         
+        
+        
+        
     </style>
 
 
@@ -198,17 +201,7 @@
             <div class="mainBorder2">
 
                 <div class="block1">
-                
-                    <div>
-                        <div class="clientHeader">
-                            <div class="helloClient">
-                                Главная страница клиента
-                            </div>
-                        </div>
-
-                        
-
-                    </div>
+    
 
                 </div>
 

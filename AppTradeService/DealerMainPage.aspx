@@ -179,7 +179,12 @@
         
     </style>
 
-
+    <script type="text/javascript">
+        function EditPage(ev) {
+                var wnd1 = window.open("EditPage.aspx?GoodId=" + ev, "ViewBillingCode", "scrollbars=no,menubar=no,height=730,width=930,resizable=no,toolbar=no,location=no,status=no,left=50,top=100,screenX=50,screenY=100");
+        }
+    
+    </script>
 
 
 </head>

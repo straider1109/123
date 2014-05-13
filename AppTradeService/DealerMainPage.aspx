@@ -136,7 +136,7 @@
         .outMain
         {
             width:90%;
-            height:250px;
+            height:150px;
             margin-top:3%;
             margin-left:5%;
             border:1px solid #000;
@@ -170,7 +170,7 @@
         .outBtn
         {
             margin-left: 76%;
-            margin-top: 39%;
+            margin-top: 12%;
         }
         
         
@@ -210,7 +210,7 @@
 
                 <div class="block1">
                 
-                <asp:Panel ID="GoodsPanel" runat="server"></asp:Panel>
+                <asp:Literal ID="lOutput" runat="server"></asp:Literal>
                 </div>
 
                 <div class="block2">

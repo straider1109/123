@@ -217,7 +217,7 @@
 
 
                         <!-- -------------- Кнопка сохранить ----------->
-                        <asp:Button ID="goodsSaveBtn" runat="server" AutoPostBack="True" Text="Сохранить" CssClass="btn btn-default dealerSaveBtn" OnClick="SaveGoods"/>
+                        <asp:Button ID="goodsSaveBtn" runat="server" AutoPostBack="True" Text="Сохранить" CssClass="btn btn-default dealerSaveBtn btn-primary" OnClick="SaveGoods"/>
 
 
 

@@ -277,7 +277,7 @@
             <asp:TextBox ID="loginBox" runat="server" placeholder="Ваш логин" CssClass="form-control loginBoxCSS"></asp:TextBox>
             <asp:TextBox ID="passBox" runat="server" placeholder="Ваш пароль" TextMode="Password" CssClass="form-control passBoxCSS"></asp:TextBox>
             <asp:Label ID="lblError" runat="server" Text="" style="color:Red;position:absolute;margin-left:41px;margin-top:5px;"></asp:Label>
-            <asp:Button ID="enterBtn" OnClick="LoginBtnClick" runat="server" Text="Вход" CssClass="btn-default  btn enterBtnCSS" />
+            <asp:Button ID="enterBtn" OnClick="LoginBtnClick" runat="server" Text="Вход" CssClass="btn-default  btn enterBtnCSS btn-primary" />
 		</div>
             
         <div class="block3">
@@ -307,7 +307,7 @@
                 <asp:RadioButton ID="RB2" runat="server" Text="Заказчик" />
             </div>
             -->
-            <asp:Button ID="registration" OnClick="registrationBtnClick" runat="server" Text="Регистрация" CssClass="btn-default  btn" />
+            <asp:Button ID="registration" OnClick="registrationBtnClick" runat="server" Text="Регистрация" CssClass="btn-default  btn btn-primary" />
             
         </div>
         

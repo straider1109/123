@@ -253,7 +253,7 @@
                         <br>
                         
                         <!-- -------------- Кнопка поиск ----------->
-                        <asp:Button ID="clientSearchBtn" runat="server" Text="Поиск" CssClass="btn btn-default" />
+                        <asp:Button ID="clientSearchBtn" runat="server" Text="Поиск"  CssClass="btn btn-default btn-primary" />
                     </div>
 
 

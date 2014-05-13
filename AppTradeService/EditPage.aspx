@@ -120,11 +120,11 @@
                 <asp:Label ID="dealerEditPhotoLabel" runat="server" Text="Фотография:" CssClass="dealerEditPhotoLabel"></asp:Label>
                 <div class="addPhoto">
                     <asp:TextBox ID="dealerEditPhotoText" runat="server" CssClass="form-control dealerEditPhotoText"></asp:TextBox>
-                    <asp:Button ID="dealerEditPhotoBtn" runat="server" Text="Обзор" CssClass="btn btn-default dealerEditPhotoBtn" />
+                    <asp:Button ID="dealerEditPhotoBtn" runat="server" Text="Обзор" CssClass="btn btn-default dealerEditPhotoBtn btn-primary" />
                 </div>
                 <br>
                 <!-- -------------- Кнопка сохранить ----------->
-                <asp:Button ID="dealerEditSaveBtn" runat="server" Text="Изменить" CssClass="btn btn-default dealerEditSaveBtn" />
+                <asp:Button ID="dealerEditSaveBtn" runat="server" Text="Изменить" CssClass="btn btn-default dealerEditSaveBtn btn-primary" />
             </div>
         </div>
     </div>

@@ -12,3 +12,10 @@ C:\Users\ярик\Documents\GitHub\123\AppTradeService\bin\DataLib.dll
 C:\Users\ярик\Documents\GitHub\123\AppTradeService\bin\DataLib.pdb
 D:\Учёба\Учёба 4 курс\Семместр 2\Курсовая работа\AppTradeService\AppTradeService\bin\DataLib.dll
 D:\Учёба\Учёба 4 курс\Семместр 2\Курсовая работа\AppTradeService\AppTradeService\bin\DataLib.pdb
+D:\123\AppTradeService\bin\AppTradeService.dll
+D:\123\AppTradeService\bin\AppTradeService.pdb
+D:\123\AppTradeService\bin\DataLib.dll
+D:\123\AppTradeService\bin\DataLib.pdb
+D:\123\AppTradeService\obj\Debug\AppTradeService.csprojResolveAssemblyReference.cache
+D:\123\AppTradeService\obj\Debug\AppTradeService.dll
+D:\123\AppTradeService\obj\Debug\AppTradeService.pdb

@@ -91,7 +91,7 @@ namespace AppTradeService
                             price + "\n" +
                             amount + "\n" +
                             description + "\n" +
-                            "<button class=\"btn btn-default btn-primary outBtn\" id=Edit_" + id + "> Изменить </button></div>" +
+                            "<button class=\"btn btn-default btn-primary outBtn\" id=Edit_" + id + " onclick=\"EditPage(" + id + ")\"> Изменить </button></div>" +
                     "</div>";
             }
 

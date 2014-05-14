@@ -267,7 +267,7 @@
         </div><!-- конец контейнера -->
     
         <div class="footer">
-            <p> © 2014 Trade Service. Designed by Free Web Templates, coded by Free CSS Templates <br> Provided by Website Templates  </p>
+            <p>  © 2014 Trade Service. Designed by Grodno Studio, coded by Grodno Coding <br> Provided by goverments  </p>
         </div>
 
 

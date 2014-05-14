@@ -34,7 +34,7 @@
             border-radius:6px;
             border: 1px solid #4086FF;
             width: 58%; 
-            height: 380px; 
+            height: 394px; 
             background-color: #FFFFFF; 
             float: left;
         }
@@ -90,8 +90,7 @@
         /*-----------------------------------Картинка в блоке №1---------------------------------*/
         .img_deal
         {
-            /*border:1px solid #000000;*/
-            padding-left:20%;
+            padding-left:28%;
             height:62%;
             
         }
@@ -148,9 +147,9 @@
         .enterBtnCSS
         {
            margin-top:3%;
-           margin-left:70%;
+           margin-left:66%;
            width:25%;
-           height:18%;
+           height:31px;
         }
         /*-----------------------------------Радио баттоны в блоке №3---------------------------------*/
         .radioBtns
@@ -161,12 +160,12 @@
             padding-left:20%;
         }
         /*-----------------------------------Кнопка входа в блоке №3---------------------------------*/
-        .buton2
+        .buttonReg
         {
-           margin-top:2%;
-           margin-left:70%;
-           width:25%;
-           height:12%; 
+           margin-top:1px;
+           margin-left:56%;
+           width:35%;
+           height:31px; 
             
         }
         
@@ -178,7 +177,7 @@
         .loginBoxCSS 
         {
             width:82%;
-            height:22%;
+            height:31px;
             margin-top:3%;
             margin-left:9%;
         }
@@ -186,7 +185,7 @@
         .passBoxCSS
         {
             width:82%;
-            height:22%;
+            height:31px;
             margin-top:2%;
             margin-left:9%;
         }
@@ -194,7 +193,7 @@
         .loginBoxRegCSS
         {
             width:82%;
-            height:14%;
+            height:31px;
             margin-top:2%;
             margin-left:9%;
         }
@@ -202,7 +201,7 @@
         .passBoxRegCSS
         {
             width:82%;
-            height:14%;
+            height:31px;
             margin-top:2%;
             margin-left:9%;
         }
@@ -210,7 +209,7 @@
         .companyBoxRegCSS
         {
             width:82%;
-            height:14%;
+            height:31px;
             margin-top:2%;
             margin-left:9%;
         }
@@ -228,6 +227,11 @@
             text-align:center;
             font-size: 80%
         }
+        
+       .inUL
+       {
+           padding-left:98px;
+       }
         
         
     </style>
@@ -251,16 +255,18 @@
             </div>
             
             <div class="img_deal">
-                <asp:Image ID="Image2" runat="server" ImageUrl="/Src/part22.png" ></asp:Image>
+                <asp:Image ID="Image2" runat="server" ImageUrl="/Src/part22.png" CssClass="imgDeal"></asp:Image>
             </div>
             
             <div class="text2_in_block1">
             Здесь вы можете: - разместить свой товар
-                <ul class="ulka">
-                  <li>- найти нужный вам товар</li>
-                  <li>- найти новых клиентов</li>
-                  <li>- найти новых поставщиков </li>
-                </ul> 
+                <div class="inUL">
+                    <ul class="ulka">
+                      <li>- найти нужный вам товар</li>
+                      <li>- найти новых клиентов</li>
+                      <li>- найти новых поставщиков </li>
+                    </ul> 
+                </div>
             </div>
 
 
@@ -299,14 +305,14 @@
                 </asp:RadioButtonList>
             </div>
            
-            <asp:Button ID="registration" OnClick="registrationBtnClick" runat="server" Text="Регистрация" CssClass="btn-default  btn btn-primary" />
+            <asp:Button ID="registration" OnClick="registrationBtnClick" runat="server" Text="Регистрация" CssClass="btn-default btn btn-primary buttonReg" />
             
         </div>
         
 	</div>
 
     <div class="footer">
-        <p> © 2014 Trade Service. Designed by Free Web Templates, coded by Free CSS Templates <br> Provided by Website Templates  </p>
+        <p>  © 2014 Trade Service. Designed by Grodno Studio, coded by Grodno Coding <br> Provided by goverments  </p>
     </div>
 
     </form>

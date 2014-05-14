@@ -93,7 +93,7 @@
             height:570px;
             margin-top:2%;
             margin-left:3%;
-            border:1px solid #4086FF;
+            /*border:1px solid #4086FF;*/
             border-radius:7px;
             background-color:#A7BCCF;
             padding-top:3%;
@@ -277,7 +277,7 @@
         </div><!-- конец контейнера -->
     
         <div class="footer">
-            <p> © 2014 Trade Service. Designed by Free Web Templates, coded by Free CSS Templates <br> Provided by Website Templates  </p>
+            <p>  © 2014 Trade Service. Designed by Grodno Studio, coded by Grodno Coding <br> Provided by goverments  </p>
         </div>
 
     </form>

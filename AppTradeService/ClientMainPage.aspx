@@ -110,6 +110,7 @@
             background-color:#A7BCCF;
             padding-top:3%;
             padding-left:3%;
+            
         }
         
         /* -------------- Лэйбл ПОИСК ----------*/ 
@@ -120,26 +121,44 @@
         
         
         /* -------------- Поиск по типу ----------*/
+        .typeCentr
+        {
+            width:94%;
+            height:40px;
+            
+            /*border:1px solid #4086FF;*/
+        }
         .clientLabelType
         {
             float:left;
             font-weight:bold;
+            padding-top:6px;
         }
-        /* -------------- Поиск по названию ----------*/
-        .clientLabelName
+        .clientBoxType
         {
-            float:left;
-            font-weight:bold;
+            padding-top:17px;
         }
-        .clientSearchByName
-        {
-            width:90%;
-        }
+        
         /* -------------- Поиск по цене ----------*/
+        .priceCentr
+        {
+            width:94%;
+            height:40px;
+            
+            /*border:1px solid #4086FF;*/
+            
+        }
+        .priceCentrHigh
+        {
+            width:94%;
+            height:40px;
+            /*border:1px solid #4086FF;*/
+        }
         .clientLabelPriceLow
         {
             float:left;
             font-weight:bold;
+            padding-top:6px;
         }
         .clientSearchByPriceLow
         {
@@ -151,6 +170,8 @@
         {
             float:left;
             font-weight:bold;
+            padding-top:6px;
+            padding-left:36px;
         }
         
         .clientSearchByPriceHigh
@@ -254,31 +275,25 @@
                     <div class="clientSearchForm">
                         <asp:Label ID="clientLabelSearch" runat="server" Text="Поиск" CssClass="clientLabelSearch"></asp:Label>
                         <br>
-                        <br>
                         
                         <!-- -------------- Поиск по типу ----------->
-                        <asp:Label ID="clientLabelType" runat="server" Text="Тип товара:" CssClass="clientLabelType"></asp:Label>
-                        <asp:DropDownList ID="clientDropDownType" runat="server">
-                        </asp:DropDownList>
-                        <br>
-                        <br>
-
-                        <!-- -------------- Поиск по названию ----------->
-                        <asp:TextBox ID="clientSearchByName" runat="server" placeholder="Название товара" CssClass="form-control clientSearchByName"></asp:TextBox>
-                        <br>
-
+                        <div class="typeCentr">
+                            <asp:Label ID="clientLabelType" runat="server" Text="Тип товара:" CssClass="clientLabelType"></asp:Label>
+                            <asp:DropDownList ID="clientDropDownType" runat="server" CssClass="clientBoxType">
+                            </asp:DropDownList>
+                        </div>
+                        
                         <!-- -------------- Поиск по цене ----------->
-                        <asp:Label ID="clientLabelPriceLow" runat="server" Text="Цена от:" CssClass="clientLabelPriceLow"></asp:Label>
-                        <asp:TextBox ID="clientSearchByPriceLow" runat="server" placeholder="$" CssClass="form-control clientSearchByPriceLow"></asp:TextBox>
-                        <br>
-                        <asp:Label ID="clientLabelPriceHigh" runat="server" Text="до:" CssClass="clientLabelPriceHigh"></asp:Label>
-                        <asp:TextBox ID="clientSearchByPriceHigh" runat="server" placeholder="$" CssClass="form-control clientSearchByPriceHigh"></asp:TextBox>
+                        <div class="priceCentr">
+                            <asp:Label ID="clientLabelPriceLow" runat="server" Text="Цена от:" CssClass="clientLabelPriceLow"></asp:Label>
+                            <asp:TextBox ID="clientSearchByPriceLow" runat="server" placeholder="$" CssClass="form-control clientSearchByPriceLow"></asp:TextBox>
+                        </div>
                         
-                        <!-- -------------- Поиск по поставщику ----------->
-                        <asp:Label ID="clientLabelDealer" runat="server" Text="Искать в товарах поставщика:"
-                            CssClass="clientLabelDealer"></asp:Label>
-                        <br>
-                        
+                        <div class="priceCentrHigh">
+
+                            <asp:Label ID="clientLabelPriceHigh" runat="server" Text="до:" CssClass="clientLabelPriceHigh"></asp:Label>
+                            <asp:TextBox ID="clientSearchByPriceHigh" runat="server" placeholder="$" CssClass="form-control clientSearchByPriceHigh"></asp:TextBox>
+                        </div>
                         <!-- -------------- Кнопка поиск ----------->
                         <asp:Button ID="clientSearchBtn" runat="server" Text="Поиск"  CssClass="btn btn-default btn-primary" />
                     </div>
@@ -291,7 +306,7 @@
         </div><!-- конец контейнера -->
     
         <div class="footer">
-            <p> © 2014 Trade Service. Designed by Free Web Templates, coded by Free CSS Templates <br> Provided by Website Templates  </p>
+            <p> © 2014 Trade Service. Designed by Grodno Studio, coded by Grodno Coding <br> Provided by goverments  </p>
         </div>
 
 

@@ -19,3 +19,10 @@ D:\123\AppTradeService\bin\DataLib.pdb
 D:\123\AppTradeService\obj\Debug\AppTradeService.csprojResolveAssemblyReference.cache
 D:\123\AppTradeService\obj\Debug\AppTradeService.dll
 D:\123\AppTradeService\obj\Debug\AppTradeService.pdb
+D:\Учёба\Учёба 4 курс\Семместр 2\Технологии разработки ПО\1\123\123\AppTradeService\bin\AppTradeService.dll
+D:\Учёба\Учёба 4 курс\Семместр 2\Технологии разработки ПО\1\123\123\AppTradeService\bin\AppTradeService.pdb
+D:\Учёба\Учёба 4 курс\Семместр 2\Технологии разработки ПО\1\123\123\AppTradeService\bin\DataLib.dll
+D:\Учёба\Учёба 4 курс\Семместр 2\Технологии разработки ПО\1\123\123\AppTradeService\bin\DataLib.pdb
+D:\Учёба\Учёба 4 курс\Семместр 2\Технологии разработки ПО\1\123\123\AppTradeService\obj\Debug\AppTradeService.csprojResolveAssemblyReference.cache
+D:\Учёба\Учёба 4 курс\Семместр 2\Технологии разработки ПО\1\123\123\AppTradeService\obj\Debug\AppTradeService.dll
+D:\Учёба\Учёба 4 курс\Семместр 2\Технологии разработки ПО\1\123\123\AppTradeService\obj\Debug\AppTradeService.pdb

@@ -84,7 +84,11 @@
             width:100%;
         }
         
-        
+        .inform1
+        {
+            padding-top:5%;
+            text-align:center;
+        }
         
         
     </style>
@@ -121,32 +125,24 @@
 
                 <div class="block1">
                 
-                    <div>
-                         Все вопросы можно узнать по адресу: tradeservice@gmail.ru
+                    <div class="inform1">
+                         Все вопросы можно задать по адресу: tradeservice@gmail.ru
                          <br>
-                         Телефоны: +375 33 888 5 88
+                         Телефоны: +375 33 888 5 888
                     </div>
 
                 </div>
 
                 <div class="block2">
                
-                    <form action="#" class="navbar-form navbar-left" role="search">
-                        <div class="form-group">
-
-                            <asp:TextBox ID="searchBox" runat="server" placeholder="Что вы хотите найти?" CssClass="form-control" ></asp:TextBox>
-                            
-                            <asp:Button ID="searchBtn" runat="server" Text="Поиск" CssClass="btn btn-default" />
-        
-                        </div>
-                    </form>
+                    
                 </div>
             </div>
 
         </div><!-- конец контейнера -->
     
         <div class="footer">
-            <p> © 2014 Trade Service. Designed by Free Web Templates, coded by Free CSS Templates <br> Provided by Website Templates  </p>
+            <p>  © 2014 Trade Service. Designed by Grodno Studio, coded by Grodno Coding <br> Provided by goverments  </p>
         </div>
 
 

@@ -84,7 +84,11 @@
             width:100%;
         }
         
-        
+        .inform
+        {
+            padding-top:5%;
+            text-align:center;
+        }
         
         
     </style>
@@ -121,7 +125,7 @@
 
                 <div class="block1">
                 
-                    <div>
+                    <div class="inform">
                         Веб-сервис принадлежит ИП Денисенко/Загорский
                         <br>
                         Создан в 2014 году, запущен в 2015.
@@ -131,22 +135,14 @@
 
                 <div class="block2">
                
-                    <form action="#" class="navbar-form navbar-left" role="search">
-                        <div class="form-group">
-
-                            <asp:TextBox ID="searchBox" runat="server" placeholder="Что вы хотите найти?" CssClass="form-control" ></asp:TextBox>
-                            
-                            <asp:Button ID="searchBtn" runat="server" Text="Поиск" CssClass="btn btn-default" />
-
-                        </div>
-                    </form>
+                    
                 </div>
             </div>
 
         </div><!-- конец контейнера -->
     
         <div class="footer">
-            <p> © 2014 Trade Service. Designed by Free Web Templates, coded by Free CSS Templates <br> Provided by Website Templates  </p>
+            <p>  © 2014 Trade Service. Designed by Grodno Studio, coded by Grodno Coding <br> Provided by goverments  </p>
         </div>
 
 

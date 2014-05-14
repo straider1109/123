@@ -124,7 +124,7 @@
                 </div>
                 <br>
                 <!-- -------------- Кнопка сохранить ----------->
-                <asp:Button ID="dealerEditSaveBtn" runat="server" Text="Изменить" CssClass="btn btn-default dealerEditSaveBtn btn-primary" />
+                <asp:Button ID="dealerEditSaveBtn" runat="server" Text="Изменить" OnClick="Save" CssClass="btn btn-default dealerEditSaveBtn btn-primary" />
             </div>
         </div>
     </div>

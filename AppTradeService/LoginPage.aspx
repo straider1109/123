@@ -294,19 +294,11 @@
            
             <div class="controls radio">
                 <asp:RadioButtonList ID="rbListReg" runat="server"  CssClass="rbListRegCSS" RepeatDirection="Horizontal" Width="200px">
-                <asp:ListItem Selected="True" Value="0">Поставщик</asp:ListItem>
-                <asp:ListItem Value="1">Заказчик</asp:ListItem>
+                <asp:ListItem Selected="True" Value="0">Заказчик</asp:ListItem>
+                <asp:ListItem Value="1">Поставщик</asp:ListItem>
                 </asp:RadioButtonList>
             </div>
            
-           
-           
-           <!--
-            <div class="radioBtns">
-                <asp:RadioButton ID="RB1" runat="server" Text="Поставщик" />
-                <asp:RadioButton ID="RB2" runat="server" Text="Заказчик" />
-            </div>
-            -->
             <asp:Button ID="registration" OnClick="registrationBtnClick" runat="server" Text="Регистрация" CssClass="btn-default  btn btn-primary" />
             
         </div>

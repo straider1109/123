@@ -39,7 +39,7 @@ namespace AppTradeService
                 int newRole = Convert.ToInt32(role);
                 if (newRole == 0)
                 {
-                    Response.Redirect("~/ClientPage.aspx");
+                    Response.Redirect("~/ClientMainPage.aspx");
                 }
                 else if (newRole == 1)
                 {

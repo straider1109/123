@@ -84,6 +84,99 @@
             width:100%;
         }
         
+         /* -------------- Форма для поиска в клиенте ----------*/
+        .privateForm
+        {
+            width:94%;
+            height:370px;
+            margin-top:2%;
+            margin-left:3%;
+            border:1px solid #4086FF;
+            border-radius:7px;
+            background-color:#A7BCCF;
+            padding-top:3%;
+            padding-left:3%;
+        }
+        
+        /* -------------- Лэйбл ПОИСК ----------*/ 
+        .privateLabel
+        {
+            font-weight:bold;
+        }
+        
+        /* -------------- Поиск по названию ----------*/
+        .privateNameLabel
+        {
+            float:left;
+        }
+        .privateNameText
+        {
+            width:90%;
+        }
+        /* -------------- Поиск по surname ----------*/
+        .privateSurnameLabel
+        {
+            float:left;
+        }
+        .privateSurnameText
+        {
+            width:90%;
+        }
+        /* -------------- Поиск по firm ----------*/
+        .privateFirmLabel
+        {
+            float:left;
+        }
+        .privateFirmText
+        {
+            width:90%;
+        }
+        /* -------------- Поиск по tel ----------*/
+        .privateTelLabel
+        {
+            float:left;
+        }
+        .privateTelText
+        {
+            width:90%;
+        }
+        /* -------------- SPISOK ----------*/
+        .spisMain
+        {
+            
+            width:80%;
+            height:15%;
+            margin-top:3%;
+            margin-left:10%;
+            border:1px solid #000;
+            border-radius:3px;
+        }
+        .spis1
+        {
+            border:1px solid #000;
+            border-radius:3px 3px 0 0;
+        }
+        .spis2
+        {
+            border:1px solid #000;
+        }
+        .spis3
+        {
+            border:1px solid #000;
+        }
+        .spis3
+        {
+            border:1px solid #000;
+            height:37%;
+        }
+        .spis4
+        {
+            border:1px solid #000;
+            border-radius:0 0 3px 3px;
+        }
+        
+        
+        
         
         
     </style>
@@ -118,22 +211,55 @@
             <div class="mainBorder2">
 
                 <div class="block1">
-                
-//инфо
+
+                    <div class="spisMain">
+                        <div class="spis1">
+                            ТИП
+                        </div>
+
+                        <div class="spis2">
+                            ИМЯ
+                        </div>
+
+                        <div class="spis3">
+                            Описание
+                        </div>
+
+                        <div class="spis4">
+                            Цена
+                        </div>
+                    </div>
 
                 </div>
 
                 <div class="block2">
                
-                    <form action="#" class="navbar-form navbar-left" role="search">
-                        <div class="form-group">
+                    
+                    <div class="privateForm">
+                        <asp:Label ID="privateLabel" runat="server" Text="Редактирование личных данных" CssClass="privateLabel"></asp:Label>
+                        <br>
+                        <br>
+                        <asp:Label ID="privateNameLabel" runat="server" Text="Имя:" CssClass="privateNameLabel"></asp:Label>
+                        <asp:TextBox ID="privateNameText" runat="server" CssClass="form-control privateNameText"></asp:TextBox>
+                        
+                        <asp:Label ID="privateSurnameLabel" runat="server" Text="Фамилия:" CssClass="privateSurnameLabel"></asp:Label>
+                        <asp:TextBox ID="privateSurnameText" runat="server" CssClass="form-control privateSurnameText"></asp:TextBox>
 
-                            <asp:TextBox ID="searchBox" runat="server" placeholder="Что вы хотите найти?" CssClass="form-control" ></asp:TextBox>
-                            
-                            <asp:Button ID="searchBtn" runat="server" Text="Поиск" CssClass="btn btn-default" />
+                        <asp:Label ID="privateFirmLabel" runat="server" Text="Организация:" CssClass="privateFirmLabel"></asp:Label>
+                        <asp:TextBox ID="privateFirmText" runat="server" CssClass="form-control privateFirmText"></asp:TextBox>
+                        
+                        <asp:Label ID="privateTelLabel" runat="server" Text="Номер телефона:" CssClass="privateTelLabel"></asp:Label>
+                        <asp:TextBox ID="privateTelText" runat="server" CssClass="form-control privateTelText"></asp:TextBox>
 
-                        </div>
-                    </form>
+                        
+                        <!-- -------------- Кнопка поиск ----------->
+                        <asp:Button ID="privateBtn" runat="server" Text="Сохранить"  CssClass="btn btn-default btn-primary" />
+                    </div>
+
+
+
+
+
                 </div>
             </div>
 

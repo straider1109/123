@@ -48,5 +48,28 @@ namespace DataLib
             adapter.Fill(table);
             return table;
         }
+
+        public static DataTable GetAllGoodsByID(int goodsID)
+        {
+            SqlConnection Con = DataBaseConnection.ConnectionDB();
+            string command = @"select * from Goods w 
+                                INNER JOIN photo p on p.goodsID = w.goodsID 
+                                where w.goodsID='" + goodsID + "';";
+            SqlDataAdapter adapter = new SqlDataAdapter(command, Con);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+        }
+
+        public static DataTable getGoodsForClient(string typeId, string minPrice, string maxPrice)
+        {
+            SqlConnection Con = DataBaseConnection.ConnectionDB();
+            string command = @"select * from Goods g 
+                                where g.typeID='" + typeId + "' and g.price >='" + minPrice + "' and g.price<='" + maxPrice + "'";
+            SqlDataAdapter adapter = new SqlDataAdapter(command, Con);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+        }
     }
 }

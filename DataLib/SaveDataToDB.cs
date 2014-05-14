@@ -23,7 +23,14 @@ namespace DataLib
             InsertDataInPhoto(GoodsId, src);
         }
 
-        
+        public static void UpdateGoods(string typeId, string name, string description,
+            string price, string amount)
+        {
+            SqlConnection Con = DataBaseConnection.ConnectionDB();
+            string command = "Update Goods Set TypeId='" + typeId + "', name='" + name + "', description='" + description + "',price='" + price + "',amount='" + amount + "'";
+            SqlCommand com = new SqlCommand(command, Con);
+            com.ExecuteNonQuery();
+        }
 
         private static string GetGoodsId()
         {

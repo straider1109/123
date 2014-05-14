@@ -164,14 +164,58 @@
             font-weight:bold;
         }
         
+                /*--------таблицы с товарами---------*/
+        .outMain
+        {
+            width:90%;
+            height:150px;
+            margin-top:3%;
+            margin-left:5%;
+            border:1px solid #000;
+            border-radius:7px;
+        }
         
+        .outName
+        {
+            height:10%;
+            border:1px solid #000;
+            border-radius:7px 7px 0 0;
+            background-color:#76A9DD;
+        }
+        
+        .outText
+        {
+            width:60%;
+            height:90%;
+            border:1px solid #000;
+            float:right;
+        }
+        
+        .outPhoto
+        {
+            width:40%;
+            height:90%;
+            border:1px solid #000;
+            float:left;
+        }
+        
+        .outBtn
+        {
+            margin-left: 76%;
+            margin-top: 12%;
+        }
         
         
         
         
     </style>
 
-
+        <script type="text/javascript">
+            function OrderOpen(ev) {
+                var wnd1 = window.open("EditPage.aspx?GoodId=" + ev, "ViewBillingCode", "scrollbars=no,menubar=no,height=730,width=930,resizable=no,toolbar=no,location=no,status=no,left=50,top=100,screenX=50,screenY=100");
+            }
+    
+    </script>
 
 
 </head>
@@ -195,14 +239,14 @@
                                 <li><a href="InfoPage.aspx">Информация</a></li>
                                 <li><a href="ContactsInfo.aspx">Контакты</a></li>
                     </ul>
+                     <asp:Button ID="exitBtn" OnClick="ExitBtnClick" runat="server" text="Выйти" CssClass="btn btn-default btn-primary" style="margin-left:1030px;margin-top:-37px; position:absolute; "/>
                 </nav>
             </div>
 
             <div class="mainBorder2">
 
                 <div class="block1">
-    
-
+                     <asp:Literal ID="lOutput" runat="server"></asp:Literal>
                 </div>
 
                 <div class="block2">
@@ -215,11 +259,6 @@
                         <!-- -------------- Поиск по типу ----------->
                         <asp:Label ID="clientLabelType" runat="server" Text="Тип товара:" CssClass="clientLabelType"></asp:Label>
                         <asp:DropDownList ID="clientDropDownType" AutoPostBack="True" runat="server">
-                            <asp:ListItem Selected="True" Value="White"> White </asp:ListItem>
-                            <asp:ListItem Value="Silver"> Silver </asp:ListItem>
-                            <asp:ListItem Value="DarkGray"> Dark Gray </asp:ListItem>
-                            <asp:ListItem Value="Khaki"> Khaki </asp:ListItem>
-                            <asp:ListItem Value="DarkKhaki"> Dark Khaki </asp:ListItem>
                         </asp:DropDownList>
                         <br>
                         <br>
@@ -246,7 +285,7 @@
                         <br>
                         
                         <!-- -------------- Кнопка поиск ----------->
-                        <asp:Button ID="clientSearchBtn" runat="server" Text="Поиск"  CssClass="btn btn-default btn-primary" />
+                        <asp:Button ID="clientSearchBtn" runat="server" Text="Поиск" OnClick="Search"  CssClass="btn btn-default btn-primary" />
                     </div>
 
 

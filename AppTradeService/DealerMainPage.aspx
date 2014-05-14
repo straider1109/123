@@ -181,7 +181,7 @@
 
     <script type="text/javascript">
         function EditPage(ev) {
-                var wnd1 = window.open("EditPage.aspx?GoodId=" + ev, "ViewBillingCode", "scrollbars=no,menubar=no,height=730,width=930,resizable=no,toolbar=no,location=no,status=no,left=50,top=100,screenX=50,screenY=100");
+                var wnd1 = window.open("Order.aspx?GoodId=" + ev, "ViewBillingCode", "scrollbars=no,menubar=no,height=730,width=930,resizable=no,toolbar=no,location=no,status=no,left=50,top=100,screenX=50,screenY=100");
         }
     
     </script>
@@ -208,6 +208,7 @@
                                 <li><a href="InfoPage.aspx">Информация</a></li>
                                 <li><a href="ContactsInfo.aspx">Контакты</a></li>
                     </ul>
+                    <asp:Button ID="exitBtn" OnClick="ExitBtnClick" runat="server" text="Выйти" CssClass="btn btn-default btn-primary" style="margin-left:1030px;margin-top:-37px; position:absolute; "/>
                 </nav>
             </div>
 

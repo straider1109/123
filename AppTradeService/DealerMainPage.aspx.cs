@@ -6,7 +6,6 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Web.Security;
-using System.Web.UI.HtmlControls;
 using System.Collections;
 
 namespace AppTradeService
@@ -23,7 +22,7 @@ namespace AppTradeService
             int newRole = Convert.ToInt32(role);
             if (newRole == 0)
             {
-                Response.Redirect("~/ClientPage.aspx");
+                Response.Redirect("~/ClientMainPage.aspx");
             }
 
             GetTypes();
@@ -129,6 +128,12 @@ namespace AppTradeService
                 date = DateTime.Today;
                 DataLib.SaveDataToDB.SaveGoods(dealerDropDownType.SelectedValue, dealerAddNameText.Text, dealerDescriptionText.Text, dealerPriceText.Text, date, dealerAmountText.Text, fileName, username);
             }
+        }
+
+        protected void ExitBtnClick(object sender, EventArgs e)
+        {
+            FormsAuthentication.SignOut();
+            Response.Redirect("~/LoginPage.aspx");
         }
     }
 }

@@ -57,6 +57,7 @@
     <Content Include="EditPage.aspx" />
     <Content Include="InfoPage.aspx" />
     <Content Include="LoginPage.aspx" />
+    <Content Include="Order.aspx" />
     <Content Include="PrivatePage.aspx" />
     <Content Include="Src\bootstrap.js" />
     <Content Include="Src\bootstrap.min.js" />
@@ -120,6 +121,13 @@
       <DependentUpon>LoginPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login\LoginValidation.cs" />
+    <Compile Include="Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PrivatePage.aspx.cs">
       <DependentUpon>PrivatePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -145,7 +153,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>5017</DevelopmentServerPort>
+          <DevelopmentServerPort>54405</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

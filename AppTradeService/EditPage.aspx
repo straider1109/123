@@ -119,8 +119,7 @@
                 <!-- -------------- Фото ----------->
                 <asp:Label ID="dealerEditPhotoLabel" runat="server" Text="Фотография:" CssClass="dealerEditPhotoLabel"></asp:Label>
                 <div class="addPhoto">
-                    <asp:TextBox ID="dealerEditPhotoText" runat="server" CssClass="form-control dealerEditPhotoText"></asp:TextBox>
-                    <asp:Button ID="dealerEditPhotoBtn" runat="server" Text="Обзор" CssClass="btn btn-default dealerEditPhotoBtn btn-primary" />
+                    <asp:FileUpload ID="FileUpload1" runat="server" />
                 </div>
                 <br>
                 <!-- -------------- Кнопка сохранить ----------->

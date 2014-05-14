@@ -65,7 +65,27 @@ namespace DataLib
         {
             SqlConnection Con = DataBaseConnection.ConnectionDB();
             string command = @"select * from Goods g 
-                                where g.typeID='" + typeId + "' and g.price >='" + minPrice + "' and g.price<='" + maxPrice + "'";
+                                where g.typeID='" + typeId + "'";
+            if (minPrice != "")
+            {
+                command += "and g.price >='" + minPrice + "'";
+            }
+
+            if (maxPrice != "")
+            {
+                command += "and g.price >='" + maxPrice + "'";
+            }
+            SqlDataAdapter adapter = new SqlDataAdapter(command, Con);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+        }
+
+        public static DataTable getLoginInfo(string username)
+        {
+            SqlConnection Con = DataBaseConnection.ConnectionDB();
+            string command = @"select * from Login w  
+                                where login='" + username + "';";
             SqlDataAdapter adapter = new SqlDataAdapter(command, Con);
             DataTable table = new DataTable();
             adapter.Fill(table);

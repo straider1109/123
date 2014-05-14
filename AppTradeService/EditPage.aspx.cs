@@ -26,7 +26,7 @@ namespace AppTradeService
         }
         protected void Save(object sender, EventArgs e)
         {
-            DataLib.SaveDataToDB.UpdateGoods(dealerDropDownTypeEdit.SelectedIndex.ToString(), dealerEditNameText.Text, dealerEditAmountText.Text, dealerEditPriceText.Text, dealerEditAmountText.Text);
+            DataLib.SaveDataToDB.UpdateGoods(dealerDropDownTypeEdit.SelectedIndex.ToString(), dealerEditNameText.Text, dealerEditAmountText.Text, dealerEditPriceText.Text, dealerEditAmountText.Text, Convert.ToInt32(Request.Params["GoodId"]).ToString());
         }
         private void GetTypes()
         {

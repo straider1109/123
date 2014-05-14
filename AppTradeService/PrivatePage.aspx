@@ -205,6 +205,7 @@
                                 <li><a href="InfoPage.aspx">Информация</a></li>
                                 <li><a href="ContactsInfo.aspx">Контакты</a></li>
                     </ul>
+                    <asp:Button ID="exitBtn" OnClick="ExitBtnClick" runat="server" text="Выйти" CssClass="btn btn-default btn-primary" style="margin-left:1030px;margin-top:-37px; position:absolute; "/>
                 </nav>
             </div>
 
@@ -239,21 +240,21 @@
                         <asp:Label ID="privateLabel" runat="server" Text="Редактирование личных данных" CssClass="privateLabel"></asp:Label>
                         <br>
                         <br>
-                        <asp:Label ID="privateNameLabel" runat="server" Text="Имя:" CssClass="privateNameLabel"></asp:Label>
+                        <asp:Label runat="server" Text="Имя:" CssClass="privateNameLabel"></asp:Label>
                         <asp:TextBox ID="privateNameText" runat="server" CssClass="form-control privateNameText"></asp:TextBox>
                         
-                        <asp:Label ID="privateSurnameLabel" runat="server" Text="Фамилия:" CssClass="privateSurnameLabel"></asp:Label>
+                        <asp:Label runat="server" Text="Фамилия:" CssClass="privateSurnameLabel"></asp:Label>
                         <asp:TextBox ID="privateSurnameText" runat="server" CssClass="form-control privateSurnameText"></asp:TextBox>
 
-                        <asp:Label ID="privateFirmLabel" runat="server" Text="Организация:" CssClass="privateFirmLabel"></asp:Label>
+                        <asp:Label runat="server" Text="Организация:" CssClass="privateFirmLabel"></asp:Label>
                         <asp:TextBox ID="privateFirmText" runat="server" CssClass="form-control privateFirmText"></asp:TextBox>
                         
-                        <asp:Label ID="privateTelLabel" runat="server" Text="Номер телефона:" CssClass="privateTelLabel"></asp:Label>
+                        <asp:Label runat="server" Text="Номер телефона:" CssClass="privateTelLabel"></asp:Label>
                         <asp:TextBox ID="privateTelText" runat="server" CssClass="form-control privateTelText"></asp:TextBox>
 
                         
                         <!-- -------------- Кнопка поиск ----------->
-                        <asp:Button ID="privateBtn" runat="server" Text="Сохранить"  CssClass="btn btn-default btn-primary" />
+                        <asp:Button ID="privateBtn" runat="server" Text="Сохранить" OnClick="SaveInfo "  CssClass="btn btn-default btn-primary" />
                     </div>
 
 

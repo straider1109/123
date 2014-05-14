@@ -24,10 +24,10 @@ namespace DataLib
         }
 
         public static void UpdateGoods(string typeId, string name, string description,
-            string price, string amount)
+            string price, string amount, string goodsId)
         {
             SqlConnection Con = DataBaseConnection.ConnectionDB();
-            string command = "Update Goods Set TypeId='" + typeId + "', name='" + name + "', description='" + description + "',price='" + price + "',amount='" + amount + "'";
+            string command = "Update Goods Set TypeId='" + typeId + "', name='" + name + "', description='" + description + "',price='" + price + "',amount='" + amount + "' where goodsid='" + goodsId + "'";
             SqlCommand com = new SqlCommand(command, Con);
             com.ExecuteNonQuery();
         }
@@ -62,6 +62,15 @@ namespace DataLib
             SqlConnection Con = DataBaseConnection.ConnectionDB();
             string command = "INSERT INTO Photo (goodsId, src) VALUES('" +
                 goodsId + "','" + src + "')";
+            SqlCommand com = new SqlCommand(command, Con);
+            com.ExecuteNonQuery();
+        }
+
+        public static void LoginUpdate(string firstName, string LastName,
+            string Organization, string Phone, string Username)
+        {
+            SqlConnection Con = DataBaseConnection.ConnectionDB();
+            string command = "Update Login Set firstname='" + firstName + "', lastname='" + LastName + "', organization='" + Organization + "',phone='" + Phone + "' Where login='" + Username + "'";
             SqlCommand com = new SqlCommand(command, Con);
             com.ExecuteNonQuery();
         }

@@ -13,30 +13,30 @@ namespace AppTradeService
     public partial class DealerMainPage : System.Web.UI.Page
     {
         int page = 1;
-        String savePath = @"d:\test\";
+        String savePath = @"D:\123\AppTradeService\Images\";
         protected void Page_Load(object sender, EventArgs e)
         {
             
-            string username = FormsAuthentication.Decrypt(Request.Cookies[0].Value).Name;
-            string role = DataLib.Roles.GetRoleByLogin(username);
-            int newRole = Convert.ToInt32(role);
-            if (newRole == 0)
-            {
-                Response.Redirect("~/ClientMainPage.aspx");
-            }
+            //string username = FormsAuthentication.Decrypt(Request.Cookies[0].Value).Name;
+            //string role = DataLib.Roles.GetRoleByLogin(username);
+            //int newRole = Convert.ToInt32(role);
+            //if (newRole == 0)
+            //{
+            //    Response.Redirect("~/ClientMainPage.aspx");
+            //}
 
-            GetTypes();
+            //GetTypes();
 
-            if (Request.Params["page"] != null)
-            {
-                try
-                {
-                    page = Convert.ToInt32(Request.Params["page"]);
-                }
-                catch { }
-            }
+            //if (Request.Params["page"] != null)
+            //{
+            //    try
+            //    {
+            //        page = Convert.ToInt32(Request.Params["page"]);
+            //    }
+            //    catch { }
+            //}
 
-            FillControl(username); 
+            //FillControl(username); 
         }
 
         private void GetTypes()
@@ -61,9 +61,6 @@ namespace AppTradeService
             int fist = (page - 1) * page_size;
             int last = fist + page_size;
             string output = "";
-
-            output += "<table border=1>\n";
-            output += "<tr ><th >Заголовок</th></tr>";
             
             for (int i = fist; i < last; i++)
             {
@@ -78,18 +75,18 @@ namespace AppTradeService
                 string description = Dt.Rows[i][6].ToString();
 
                 output += "<div class=\"outMain\">" +
-                        "<div class=\"outName\">" +
+                        "<div class=\"outName\"><b>" +
                            "" + type +
-                        "</div>" +
+                        "</b></div>" +
                         
                         "<div class=\"outPhoto\">" +
                            
                             "<img width=\"100%\" height=\"100%\" src=\"Images/" + src + "\">" +
-                        "</div><div class=\"outText\">" +
-                            name + "\n" +
-                            price + "\n" +
-                            amount + "\n" +
-                            description + "\n" +
+                        "</div><div class=\"outText\"><b>Название:</b> " +
+                            name + "\n<br><b>Количество:</b> " +
+                            amount + "\n<br><b>Описание:</b> " +
+                            description + "\n<br><b>Цена:</b> " +
+                            price + "$\n<br>" +
                             "<button class=\"btn btn-default btn-primary outBtn\" id=Edit_" + id + " onclick=\"EditPage(" + id + ")\"> Изменить </button></div>" +
                     "</div>";
             }
@@ -101,17 +98,16 @@ namespace AppTradeService
             {
                 if (page == i)
                 {
-                    strPage += " <font style='font-size:14px' color=gray>" + i + "</font> ";
+                    strPage += "<br><br> <font style='font-size:14px;margin-left:40px;' color=gray>" + i + "</font> ";
                 }
                 else
                 {
-                    strPage += " <a href='" + Request.FilePath + "?page=" + i + "'>" + i + "</a> ";
+                    strPage += " <a style='marging-left:30px;' href='" + Request.FilePath + "?page=" + i + "'>" + i + "</a> |  ";
                 }
             }
             
             if (page_count > 1)
-                output += "<tr><td ><BR>" + strPage + "</td><tr>";
-            output += "</table>\n";
+                output += strPage;
 
 
             lOutput.Text = output; 

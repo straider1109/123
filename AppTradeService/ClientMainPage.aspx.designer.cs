@@ -139,15 +139,6 @@ namespace AppTradeService {
         protected global::System.Web.UI.WebControls.Label clientLabelDealer;
         
         /// <summary>
-        /// clientDropDownDealer control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList clientDropDownDealer;
-        
-        /// <summary>
         /// clientSearchBtn control.
         /// </summary>
         /// <remarks>

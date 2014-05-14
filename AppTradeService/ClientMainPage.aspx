@@ -168,7 +168,7 @@
         .outMain
         {
             width:90%;
-            height:150px;
+            height:170px;
             margin-top:3%;
             margin-left:5%;
             border:1px solid #000;
@@ -202,7 +202,7 @@
         .outBtn
         {
             margin-left: 76%;
-            margin-top: 12%;
+            margin-top: 7%;
         }
         
         
@@ -258,7 +258,7 @@
                         
                         <!-- -------------- Поиск по типу ----------->
                         <asp:Label ID="clientLabelType" runat="server" Text="Тип товара:" CssClass="clientLabelType"></asp:Label>
-                        <asp:DropDownList ID="clientDropDownType" AutoPostBack="True" runat="server">
+                        <asp:DropDownList ID="clientDropDownType" runat="server">
                         </asp:DropDownList>
                         <br>
                         <br>
@@ -277,15 +277,10 @@
                         <!-- -------------- Поиск по поставщику ----------->
                         <asp:Label ID="clientLabelDealer" runat="server" Text="Искать в товарах поставщика:"
                             CssClass="clientLabelDealer"></asp:Label>
-                        <asp:DropDownList ID="clientDropDownDealer" AutoPostBack="True" runat="server">
-                            <asp:ListItem Selected="True" Value="White"> azot </asp:ListItem>
-                            <asp:ListItem Value="Silver"> himvolokno </asp:ListItem>
-                            <asp:ListItem Value="DarkGray"> tabachka </asp:ListItem>
-                        </asp:DropDownList>
                         <br>
                         
                         <!-- -------------- Кнопка поиск ----------->
-                        <asp:Button ID="clientSearchBtn" runat="server" Text="Поиск" OnClick="Search"  CssClass="btn btn-default btn-primary" />
+                        <asp:Button ID="clientSearchBtn" runat="server" Text="Поиск"  CssClass="btn btn-default btn-primary" />
                     </div>
 
 

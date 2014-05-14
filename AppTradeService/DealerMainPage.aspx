@@ -136,7 +136,7 @@
         .outMain
         {
             width:90%;
-            height:150px;
+            height:180px;
             margin-top:3%;
             margin-left:5%;
             border:1px solid #000;
@@ -170,7 +170,7 @@
         .outBtn
         {
             margin-left: 76%;
-            margin-top: 12%;
+            margin-top: 7%;
         }
         
         
@@ -181,7 +181,7 @@
 
     <script type="text/javascript">
         function EditPage(ev) {
-                var wnd1 = window.open("Order.aspx?GoodId=" + ev, "ViewBillingCode", "scrollbars=no,menubar=no,height=730,width=930,resizable=no,toolbar=no,location=no,status=no,left=50,top=100,screenX=50,screenY=100");
+                var wnd1 = window.open("EditPage.aspx?GoodId=" + ev, "ViewBillingCode", "scrollbars=no,menubar=no,height=730,width=930,resizable=no,toolbar=no,location=no,status=no,left=50,top=100,screenX=50,screenY=100");
         }
     
     </script>
